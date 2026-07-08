@@ -1,0 +1,108 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3180905334\\after"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3180905334.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T172427.959975",
+      "end_timestamp": "2026-07-01T172432.755432",
+      "output_format_version": "4.1.0",
+      "duration": 4.795472860336304,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 1
+      }
+    }
+  ],
+  "license_detections": [],
+  "files": [
+    {
+      "path": "after",
+      "type": "directory",
+      "name": "after",
+      "base_name": "after",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 1,
+      "dirs_count": 0,
+      "size_count": 19184,
+      "scan_errors": []
+    },
+    {
+      "path": "after/docs__platform__deploying-airbyte__abctl__index__58f29d5a.md",
+      "type": "file",
+      "name": "docs__platform__deploying-airbyte__abctl__index__58f29d5a.md",
+      "base_name": "docs__platform__deploying-airbyte__abctl__index__58f29d5a",
+      "extension": ".md",
+      "size": 19184,
+      "date": "2026-07-01",
+      "sha1": "df8bbbd4520e8bc38d063e35c4770b89cfc9c9c3",
+      "md5": "57924c85a031d0ac9f0f84bba9c08248",
+      "sha256": "7d04f17429f3556ba3ccad569010b9bd0445e59260da03599d25d8b70bc0fe01",
+      "sha1_git": "6aea438e62c8a9e892523dc945106a4ffbe9f504",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text, with very long lines",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

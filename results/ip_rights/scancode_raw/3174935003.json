@@ -1,0 +1,267 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3174935003\\after"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3174935003.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T151003.100612",
+      "end_timestamp": "2026-07-01T151008.282995",
+      "output_format_version": "4.1.0",
+      "duration": 5.18240213394165,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 3
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT",
+      "detection_count": 2,
+      "reference_matches": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "from_file": "after/packages__http-client-csharp__generator__Microsoft.TypeSpec.Generator.Input__src__InputTypes__InputModelProperty__6097fe5b.cs",
+          "start_line": 2,
+          "end_line": 2,
+          "matcher": "2-aho",
+          "score": 100.0,
+          "matched_length": 5,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_12.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "after",
+      "type": "directory",
+      "name": "after",
+      "base_name": "after",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 3,
+      "dirs_count": 0,
+      "size_count": 9050,
+      "scan_errors": []
+    },
+    {
+      "path": "after/packages__http-client-csharp__generator__Microsoft.TypeSpec.Generator.Input__src__InputTypes__InputModelProperty__6097fe5b.cs",
+      "type": "file",
+      "name": "packages__http-client-csharp__generator__Microsoft.TypeSpec.Generator.Input__src__InputTypes__InputModelProperty__6097fe5b.cs",
+      "base_name": "packages__http-client-csharp__generator__Microsoft.TypeSpec.Generator.Input__src__InputTypes__InputModelProperty__6097fe5b",
+      "extension": ".cs",
+      "size": 3434,
+      "date": "2026-07-01",
+      "sha1": "225b41374739b75991e77aa527a4b54ef2d26b6d",
+      "md5": "2826da5b90d6610416faad067a5ecc25",
+      "sha256": "ec88a64e9bfb5b58bb2057207b3386ef02110f7fc7bc1e661145444e3a9d25b9",
+      "sha1_git": "99232cebda83cd5243038f0614c67571e5eb445d",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text, with very long lines",
+      "programming_language": "C#",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/packages__http-client-csharp__generator__Microsoft.TypeSpec.Generator.Input__src__InputTypes__InputModelProperty__6097fe5b.cs",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_12.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+            }
+          ],
+          "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 1.77,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/packages__http-client-csharp__generator__Microsoft.TypeSpec.Generator.Input__test__InputModelPropertyTests__cc723e46.cs",
+      "type": "file",
+      "name": "packages__http-client-csharp__generator__Microsoft.TypeSpec.Generator.Input__test__InputModelPropertyTests__cc723e46.cs",
+      "base_name": "packages__http-client-csharp__generator__Microsoft.TypeSpec.Generator.Input__test__InputModelPropertyTests__cc723e46",
+      "extension": ".cs",
+      "size": 5542,
+      "date": "2026-07-01",
+      "sha1": "2166e6ff83e936511bbc193c8a0a5380a29cce47",
+      "md5": "6ed3c243d0308bf3c74b9e5c2ff4f540",
+      "sha256": "64f991082cbc8cec6d7b410484e500d4e0906d7e8aa5d7e415fc75bba5f65546",
+      "sha1_git": "c280edee62dce5b236ed7a6563756fe52e233ee2",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "C#",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/packages__http-client-csharp__generator__Microsoft.TypeSpec.Generator.Input__test__InputModelPropertyTests__cc723e46.cs",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_12.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+            }
+          ],
+          "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 1.24,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/packages__http-client-csharp__global__c2fb05fa.json",
+      "type": "file",
+      "name": "packages__http-client-csharp__global__c2fb05fa.json",
+      "base_name": "packages__http-client-csharp__global__c2fb05fa",
+      "extension": ".json",
+      "size": 74,
+      "date": "2026-07-01",
+      "sha1": "0b6391f8b496bd70ddef707c20d736bf0d764d87",
+      "md5": "28e1a4cad7a81c4dbdbbf644edce622c",
+      "sha256": "8c3fe117294f3c037ec7f6bc91069d1686ec42cadbce1c0dab6837144ee049d3",
+      "sha1_git": "ef491491b9901be39c8247daeb0727b7984f3744",
+      "mime_type": "application/json",
+      "file_type": "JSON data",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

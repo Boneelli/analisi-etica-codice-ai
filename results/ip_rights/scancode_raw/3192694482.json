@@ -1,0 +1,233 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3192694482\\after"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3192694482.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T174229.282648",
+      "end_timestamp": "2026-07-01T174234.714740",
+      "output_format_version": "4.1.0",
+      "duration": 5.432106256484985,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 3
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "apache_2_0-f590f40b-411c-1850-b68c-588af90e1dea",
+      "license_expression": "apache-2.0",
+      "license_expression_spdx": "Apache-2.0",
+      "detection_count": 1,
+      "reference_matches": [
+        {
+          "license_expression": "apache-2.0",
+          "license_expression_spdx": "Apache-2.0",
+          "from_file": "after/scripts__mirror_demo_pages__790a284d.py",
+          "start_line": 2,
+          "end_line": 2,
+          "matcher": "1-spdx-id",
+          "score": 100.0,
+          "matched_length": 6,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "spdx-license-identifier-apache_2_0-d904d6f07f8d33445270a849a3be98d8904d568a",
+          "rule_url": null
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "after",
+      "type": "directory",
+      "name": "after",
+      "base_name": "after",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 3,
+      "dirs_count": 0,
+      "size_count": 16831,
+      "scan_errors": []
+    },
+    {
+      "path": "after/docs__alpha_factory_v1__demos__alpha_agi_insight_v1__index__d32dfebc.html",
+      "type": "file",
+      "name": "docs__alpha_factory_v1__demos__alpha_agi_insight_v1__index__d32dfebc.html",
+      "base_name": "docs__alpha_factory_v1__demos__alpha_agi_insight_v1__index__d32dfebc",
+      "extension": ".html",
+      "size": 6456,
+      "date": "2026-07-01",
+      "sha1": "1bd891bdf09b4dccb6314f42eb2339d49dfe8e63",
+      "md5": "7f25be8d3b0830487830e1c1ba49fcb7",
+      "sha256": "b1115e103ca2ad976566dd427ff91bd49dc5e02cf69a96055afaf0ca3eccf807",
+      "sha1_git": "93b9f760d34c270ffcda8cc4c27422d934822f5d",
+      "mime_type": "text/html",
+      "file_type": "HTML document, UTF-8 Unicode text, with very long lines",
+      "programming_language": "HTML",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "(c) 2025 Montreal.AI",
+          "start_line": 98,
+          "end_line": 98
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Montreal.AI",
+          "start_line": 98,
+          "end_line": 98
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/docs__alpha_factory_v1__demos__alpha_agi_insight_v1__script__8836288e.js",
+      "type": "file",
+      "name": "docs__alpha_factory_v1__demos__alpha_agi_insight_v1__script__8836288e.js",
+      "base_name": "docs__alpha_factory_v1__demos__alpha_agi_insight_v1__script__8836288e",
+      "extension": ".js",
+      "size": 8719,
+      "date": "2026-07-01",
+      "sha1": "19ca1357bd3c0bb4095c9d808187ab56e414e38c",
+      "md5": "f94104609c16b121f86df3d5af41ad00",
+      "sha256": "d77c9c7d9986ba6c4f90c26cb734e8cfe704a2f9c4c1b2f5c0c50949a4acf0e1",
+      "sha1_git": "acd3be0625ca3d632a99041a1fe4354c9b8e5552",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, UTF-8 Unicode text",
+      "programming_language": "JavaScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/scripts__mirror_demo_pages__790a284d.py",
+      "type": "file",
+      "name": "scripts__mirror_demo_pages__790a284d.py",
+      "base_name": "scripts__mirror_demo_pages__790a284d",
+      "extension": ".py",
+      "size": 1656,
+      "date": "2026-07-01",
+      "sha1": "bd564d00f517e18c4e4743756864cf2373c551d6",
+      "md5": "807e26ca61bde609df63dd7273fa6f2a",
+      "sha256": "de6d4268a39e25898e0766d7c73bdc4129855573252fc34e1af53ba706f6bef8",
+      "sha1_git": "16b7b89fddde575509b085f8bff11f5ee3bca550",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": "apache-2.0",
+      "detected_license_expression_spdx": "Apache-2.0",
+      "license_detections": [
+        {
+          "license_expression": "apache-2.0",
+          "license_expression_spdx": "Apache-2.0",
+          "matches": [
+            {
+              "license_expression": "apache-2.0",
+              "license_expression_spdx": "Apache-2.0",
+              "from_file": "after/scripts__mirror_demo_pages__790a284d.py",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "1-spdx-id",
+              "score": 100.0,
+              "matched_length": 6,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "spdx-license-identifier-apache_2_0-5dcda840588b4f07f49f2c0100924ebca7bc0649",
+              "rule_url": null
+            }
+          ],
+          "identifier": "apache_2_0-f590f40b-411c-1850-b68c-588af90e1dea"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 3.11,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

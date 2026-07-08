@@ -1,0 +1,230 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3164486875\\before"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3164486875_before.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T173520.373247",
+      "end_timestamp": "2026-07-01T173525.803551",
+      "output_format_version": "4.1.0",
+      "duration": 5.430318355560303,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 2
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "apache_2_0-8e30f4ab-21f8-71ea-1791-c57a4329bb6f",
+      "license_expression": "apache-2.0",
+      "license_expression_spdx": "Apache-2.0",
+      "detection_count": 1,
+      "reference_matches": [
+        {
+          "license_expression": "apache-2.0",
+          "license_expression_spdx": "Apache-2.0",
+          "from_file": "before/README__8ec9a00b.md",
+          "start_line": 9,
+          "end_line": 9,
+          "matcher": "2-aho",
+          "score": 100.0,
+          "matched_length": 11,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "apache-2.0_1142.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_1142.RULE"
+        }
+      ]
+    },
+    {
+      "identifier": "apache_2_0_or_lgpl_3_0-7b88c925-43d3-f60d-eba7-7e45f22a43f8",
+      "license_expression": "apache-2.0 OR lgpl-3.0",
+      "license_expression_spdx": "Apache-2.0 OR LGPL-3.0-only",
+      "detection_count": 1,
+      "reference_matches": [
+        {
+          "license_expression": "apache-2.0 OR lgpl-3.0",
+          "license_expression_spdx": "Apache-2.0 OR LGPL-3.0-only",
+          "from_file": "before/README__8ec9a00b.md",
+          "start_line": 332,
+          "end_line": 334,
+          "matcher": "3-seq",
+          "score": 11.88,
+          "matched_length": 4,
+          "match_coverage": 12.5,
+          "rule_relevance": 95,
+          "rule_identifier": "apache-2.0_or_lgpl-3.0_3.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_or_lgpl-3.0_3.RULE"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "before",
+      "type": "directory",
+      "name": "before",
+      "base_name": "before",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 2,
+      "dirs_count": 0,
+      "size_count": 14580,
+      "scan_errors": []
+    },
+    {
+      "path": "before/examples__README__9d0f69d6.md",
+      "type": "file",
+      "name": "examples__README__9d0f69d6.md",
+      "base_name": "examples__README__9d0f69d6",
+      "extension": ".md",
+      "size": 3897,
+      "date": "2026-07-01",
+      "sha1": "14fefc487759e01ec4bb9a766e114f4770892ed0",
+      "md5": "853402ce76c02a672f8fa6230357de5e",
+      "sha256": "d229db42427a94a0c588996bbfbb0216693a9a4f2ce5db0647facfc87d651380",
+      "sha1_git": "ed5cbef1b7e6194584113cb1cf609583259cc266",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/README__8ec9a00b.md",
+      "type": "file",
+      "name": "README__8ec9a00b.md",
+      "base_name": "README__8ec9a00b",
+      "extension": ".md",
+      "size": 10683,
+      "date": "2026-07-01",
+      "sha1": "a5fee2ad04b9a7d28ff3929fb61136c28314ebe6",
+      "md5": "2b7629fe0617cba9ea11f1b65f23dc9e",
+      "sha256": "cfecf5167c61c72e3f6cce055295a0960f780a7e341790583489b5875aa10764",
+      "sha1_git": "46f286e92ea048aa5104f4be3951e23aa1a200b7",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, UTF-8 Unicode text executable",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": true,
+      "detected_license_expression": "apache-2.0 AND (apache-2.0 OR lgpl-3.0)",
+      "detected_license_expression_spdx": "Apache-2.0 AND (Apache-2.0 OR LGPL-3.0-only)",
+      "license_detections": [
+        {
+          "license_expression": "apache-2.0",
+          "license_expression_spdx": "Apache-2.0",
+          "matches": [
+            {
+              "license_expression": "apache-2.0",
+              "license_expression_spdx": "Apache-2.0",
+              "from_file": "before/README__8ec9a00b.md",
+              "start_line": 9,
+              "end_line": 9,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 11,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "apache-2.0_1142.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_1142.RULE"
+            }
+          ],
+          "identifier": "apache_2_0-8e30f4ab-21f8-71ea-1791-c57a4329bb6f"
+        },
+        {
+          "license_expression": "apache-2.0 OR lgpl-3.0",
+          "license_expression_spdx": "Apache-2.0 OR LGPL-3.0-only",
+          "matches": [
+            {
+              "license_expression": "apache-2.0 OR lgpl-3.0",
+              "license_expression_spdx": "Apache-2.0 OR LGPL-3.0-only",
+              "from_file": "before/README__8ec9a00b.md",
+              "start_line": 332,
+              "end_line": 334,
+              "matcher": "3-seq",
+              "score": 11.88,
+              "matched_length": 4,
+              "match_coverage": 12.5,
+              "rule_relevance": 95,
+              "rule_identifier": "apache-2.0_or_lgpl-3.0_3.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_or_lgpl-3.0_3.RULE"
+            }
+          ],
+          "identifier": "apache_2_0_or_lgpl_3_0-7b88c925-43d3-f60d-eba7-7e45f22a43f8"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 1.11,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

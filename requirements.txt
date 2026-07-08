@@ -1,0 +1,13 @@
+pandas>=2.0
+pyarrow>=14.0
+requests>=2.31
+lizard>=1.17.10
+scancode-toolkit>=32.0.0
+openai>=1.30.0
+huggingface_hub>=0.23.0
+fsspec>=2024.2.0
+
+# Gitleaks NON e' un pacchetto Python: e' un binario Go.
+# Installazione separata:
+#   curl -sSfL https://raw.githubusercontent.com/gitleaks/gitleaks/master/install.sh | sh -s -- -b /usr/local/bin
+# oppure via Docker: docker pull zricethezav/gitleaks:latest

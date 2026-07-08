@@ -1,0 +1,437 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3141889094\\after"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3141889094.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T152713.239376",
+      "end_timestamp": "2026-07-01T152722.287476",
+      "output_format_version": "4.1.0",
+      "duration": 9.048117876052856,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 6
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT",
+      "detection_count": 4,
+      "reference_matches": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "from_file": "after/language_service__src__state__a79b6cbe.rs",
+          "start_line": 2,
+          "end_line": 2,
+          "matcher": "2-aho",
+          "score": 100.0,
+          "matched_length": 5,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_12.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "after",
+      "type": "directory",
+      "name": "after",
+      "base_name": "after",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 6,
+      "dirs_count": 0,
+      "size_count": 123952,
+      "scan_errors": []
+    },
+    {
+      "path": "after/.github__workflows__copilot-setup-steps__e3c909df.yml",
+      "type": "file",
+      "name": ".github__workflows__copilot-setup-steps__e3c909df.yml",
+      "base_name": ".github__workflows__copilot-setup-steps__e3c909df",
+      "extension": ".yml",
+      "size": 746,
+      "date": "2026-07-01",
+      "sha1": "e1ab0278d2126aef246dd12fc642c1a4837c324f",
+      "md5": "47cce273916ef23c98cbb5d1bef9e92e",
+      "sha256": "9a5c5507f760ab6513d7b9633e405fe06c2926cd46de124d6b86cd07d416ba97",
+      "sha1_git": "3981e4d207c68c4fd84231616acd5391314edd6e",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/language_service__src__state__a79b6cbe.rs",
+      "type": "file",
+      "name": "language_service__src__state__a79b6cbe.rs",
+      "base_name": "language_service__src__state__a79b6cbe",
+      "extension": ".rs",
+      "size": 30461,
+      "date": "2026-07-01",
+      "sha1": "6a52e1ad91111e59935375ebbc26b1e7a2eb6d5e",
+      "md5": "d2397b6d224a7f0fded5b83a3fac620e",
+      "sha256": "8860233e9736de5059f17020786e0e63f7e63762cc64da7fab76d0bac0893940",
+      "sha1_git": "24603dfa0531320ee3e1fc75557a6e99f4fde584",
+      "mime_type": "text/x-c",
+      "file_type": "C source, ASCII text",
+      "programming_language": "Rust",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/language_service__src__state__a79b6cbe.rs",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_12.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+            }
+          ],
+          "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.16,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/language_service__src__state__tests__05b6d030.rs",
+      "type": "file",
+      "name": "language_service__src__state__tests__05b6d030.rs",
+      "base_name": "language_service__src__state__tests__05b6d030",
+      "extension": ".rs",
+      "size": 80673,
+      "date": "2026-07-01",
+      "sha1": "a1e3df2d7e8583eba0aade727a54c09572845a95",
+      "md5": "2bc422be58500b476904c6a7ec2d9d04",
+      "sha256": "28c60c08bf05fe10551cc2f3fc0de876b82dcae8c28e2e1795829d4fa3249dff",
+      "sha1_git": "c695bcad287e7d376896dcebf2be1b8534a05b52",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "Rust",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/language_service__src__state__tests__05b6d030.rs",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_12.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+            }
+          ],
+          "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.07,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/vscode__src__language-service__notebook__5f529273.ts",
+      "type": "file",
+      "name": "vscode__src__language-service__notebook__5f529273.ts",
+      "base_name": "vscode__src__language-service__notebook__5f529273",
+      "extension": ".ts",
+      "size": 5201,
+      "date": "2026-07-01",
+      "sha1": "eed101097038412015787789789898eb271ee37b",
+      "md5": "5a48d91604659ec90cc001d825c8f0c5",
+      "sha256": "d48b1a3b005c4977037e14c6d07d0e0dcc252adbe5f8e3ea11d9dc6fdef74981",
+      "sha1_git": "66c214621526b1e692a66bbfa88429189c22cfec",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "TypeScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/vscode__src__language-service__notebook__5f529273.ts",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_12.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+            }
+          ],
+          "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.98,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/vscode__test__suites__language-service__notebook.test__1fe13381.ts",
+      "type": "file",
+      "name": "vscode__test__suites__language-service__notebook.test__1fe13381.ts",
+      "base_name": "vscode__test__suites__language-service__notebook.test__1fe13381",
+      "extension": ".ts",
+      "size": 5634,
+      "date": "2026-07-01",
+      "sha1": "8ba06f002719d7cddd17a29a205d1c6da574b536",
+      "md5": "dd6cfb4562c4ffad999d699e068b3228",
+      "sha256": "8fe323f3f4917300f40bdd18267b8f380b104e66266290a6c2d803a25a8dac6d",
+      "sha1_git": "7086669402210f64a23970548f6c92eef7b4e5fd",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "TypeScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/vscode__test__suites__language-service__notebook.test__1fe13381.ts",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_12.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+            }
+          ],
+          "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.83,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/vscode__test__suites__language-service__test-workspace__test-notebook-profile__f6280bfd.ipynb",
+      "type": "file",
+      "name": "vscode__test__suites__language-service__test-workspace__test-notebook-profile__f6280bfd.ipynb",
+      "base_name": "vscode__test__suites__language-service__test-workspace__test-notebook-profile__f6280bfd",
+      "extension": ".ipynb",
+      "size": 1237,
+      "date": "2026-07-01",
+      "sha1": "ece094177aafc5276217e24639baa9c4ac450be1",
+      "md5": "663b2efc7f0b1d0d326c1692f72fd176",
+      "sha256": "b1b48edb4ed9e5081e4c0f2452d0d2cbf958cc11f19316b277650470d4f07f7e",
+      "sha1_git": "8da16e6b9bd57f9726414c8c148c93332ffa4d83",
+      "mime_type": "application/json",
+      "file_type": "JSON data",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

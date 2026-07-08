@@ -1,0 +1,245 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3225791618\\before"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3225791618_before.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T173118.817350",
+      "end_timestamp": "2026-07-01T173125.159485",
+      "output_format_version": "4.1.0",
+      "duration": 6.342153072357178,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 2
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "gpl_3_0_plus_and_agpl_3_0-cd952bd9-54be-39d6-6e8e-a5728921bcb9",
+      "license_expression": "gpl-3.0-plus AND agpl-3.0",
+      "license_expression_spdx": "GPL-3.0-or-later AND AGPL-3.0-only",
+      "detection_count": 1,
+      "reference_matches": [
+        {
+          "license_expression": "gpl-3.0-plus",
+          "license_expression_spdx": "GPL-3.0-or-later",
+          "from_file": "before/lib__Controller__SettingController__4b43fb60.php",
+          "start_line": 5,
+          "end_line": 6,
+          "matcher": "3-seq",
+          "score": 50.0,
+          "matched_length": 11,
+          "match_coverage": 50.0,
+          "rule_relevance": 100,
+          "rule_identifier": "gpl-3.0-plus_33.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_33.RULE"
+        },
+        {
+          "license_expression": "agpl-3.0",
+          "license_expression_spdx": "AGPL-3.0-only",
+          "from_file": "before/lib__Controller__SettingController__4b43fb60.php",
+          "start_line": 5,
+          "end_line": 5,
+          "matcher": "2-aho",
+          "score": 100.0,
+          "matched_length": 9,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "agpl-3.0_179.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/agpl-3.0_179.RULE"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "before",
+      "type": "directory",
+      "name": "before",
+      "base_name": "before",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 2,
+      "dirs_count": 0,
+      "size_count": 37558,
+      "scan_errors": []
+    },
+    {
+      "path": "before/CHANGELOG__ab09011f.md",
+      "type": "file",
+      "name": "CHANGELOG__ab09011f.md",
+      "base_name": "CHANGELOG__ab09011f",
+      "extension": ".md",
+      "size": 32574,
+      "date": "2026-07-01",
+      "sha1": "9c4f63f971b61ae18e36c2176c083ef8ce7b3666",
+      "md5": "f03625c67d7d7571baa71035e28a298c",
+      "sha256": "373021c4dcd15cb0ee6c889d61ddcbd98dcf862f458f2f051234c9a981e9dfbd",
+      "sha1_git": "c6be7c4e7d7ce16ced7f8f26c0181b96abce5ccb",
+      "mime_type": "text/plain",
+      "file_type": "UTF-8 Unicode text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "copyright 2019 - dark",
+          "start_line": 264,
+          "end_line": 265
+        }
+      ],
+      "holders": [
+        {
+          "holder": "dark",
+          "start_line": 265,
+          "end_line": 265
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/lib__Controller__SettingController__4b43fb60.php",
+      "type": "file",
+      "name": "lib__Controller__SettingController__4b43fb60.php",
+      "base_name": "lib__Controller__SettingController__4b43fb60",
+      "extension": ".php",
+      "size": 4984,
+      "date": "2026-07-01",
+      "sha1": "e66f2328fd480963a0de3836e439d58657e5368d",
+      "md5": "612f34578e091170c786ebc853e54008",
+      "sha256": "3f01039f5484ec3c204ecbe6f0586a54901e4331bd34b5d56ddda2bb8ed5e23b",
+      "sha1_git": "6e2a01845166670f4299e28f95226dc1a710f59c",
+      "mime_type": "text/x-php",
+      "file_type": "PHP script, ASCII text",
+      "programming_language": "PHP",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": "gpl-3.0-plus AND agpl-3.0",
+      "detected_license_expression_spdx": "GPL-3.0-or-later AND AGPL-3.0-only",
+      "license_detections": [
+        {
+          "license_expression": "gpl-3.0-plus AND agpl-3.0",
+          "license_expression_spdx": "GPL-3.0-or-later AND AGPL-3.0-only",
+          "matches": [
+            {
+              "license_expression": "gpl-3.0-plus",
+              "license_expression_spdx": "GPL-3.0-or-later",
+              "from_file": "before/lib__Controller__SettingController__4b43fb60.php",
+              "start_line": 5,
+              "end_line": 6,
+              "matcher": "3-seq",
+              "score": 50.0,
+              "matched_length": 11,
+              "match_coverage": 50.0,
+              "rule_relevance": 100,
+              "rule_identifier": "gpl-3.0-plus_33.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/gpl-3.0-plus_33.RULE"
+            },
+            {
+              "license_expression": "agpl-3.0",
+              "license_expression_spdx": "AGPL-3.0-only",
+              "from_file": "before/lib__Controller__SettingController__4b43fb60.php",
+              "start_line": 5,
+              "end_line": 5,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 9,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "agpl-3.0_179.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/agpl-3.0_179.RULE"
+            }
+          ],
+          "identifier": "gpl_3_0_plus_and_agpl_3_0-cd952bd9-54be-39d6-6e8e-a5728921bcb9"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 2.55,
+      "copyrights": [
+        {
+          "copyright": "copyright 2016-2021 Marcel Scherello",
+          "start_line": 9,
+          "end_line": 9
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Marcel Scherello",
+          "start_line": 9,
+          "end_line": 9
+        }
+      ],
+      "authors": [
+        {
+          "author": "Marcel Scherello <audioplayer@scherello.de>",
+          "start_line": 8,
+          "end_line": 8
+        }
+      ],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

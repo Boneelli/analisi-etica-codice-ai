@@ -1,0 +1,245 @@
+REPORT RISULTATI ESPERIMENTO
+
+Mapping PR->agente: parquet (completo, 250 PR) — 250 PR mappate
+
+========================================================================
+BASE DI NORMALIZZAZIONE (quantita' di codice per agente)
+========================================================================
+              n_funzioni  n_file_distinti
+agent                                    
+Claude_Code        21134             1087
+Copilot             6379              453
+Cursor              3452              307
+Devin               3175              330
+OpenAI_Codex        1899              136
+
+NOTA: lo sbilanciamento e' forte (Claude_Code ha ~10x le funzioni di
+Codex). Le metriche seguenti sono NORMALIZZATE per permettere un
+confronto equo tra agenti che producono quantita' di codice diverse.
+
+========================================================================
+1. SUSTAINABILITY (Lizard)
+========================================================================
+
+--- Complessita' ciclomatica (CCN) per funzione ---
+              media  mediana  p90  max      n
+agent                                        
+Claude_Code    2.43      1.0  5.0  408  21134
+Copilot        2.91      1.0  6.0  195   6379
+Cursor         2.58      1.0  5.0  110   3452
+Devin          2.33      1.0  5.0   86   3175
+OpenAI_Codex   4.31      2.0  9.0  413   1899
+
+--- Test robustezza: CCN media escludendo il 5% piu' complesso ---
+              media_completa  media_troncata_95%
+Claude_Code             2.43                1.71
+Copilot                 2.91                2.11
+Cursor                  2.58                1.78
+Devin                   2.33                1.73
+OpenAI_Codex            4.31                2.70
+
+--- % funzioni 'smelly' per tipo di smell (NORMALIZZATO su n funzioni) ---
+              perc_CCN_alto(>10)  perc_long_method(>50nloc)  perc_troppi_param(>5)
+agent                                                                             
+Claude_Code                 2.70                       4.59                   1.21
+Copilot                     4.17                       3.09                   3.73
+Cursor                      3.56                       5.82                   2.03
+Devin                       2.55                       6.87                   1.35
+OpenAI_Codex                6.85                       5.63                   0.32
+
+--- Green Smell Density (per PR) ---
+              media  mediana  dev_std  n_PR
+agent                                      
+Claude_Code   0.073    0.040    0.096    43
+Copilot       0.063    0.050    0.059    39
+Cursor        0.117    0.076    0.182    33
+Devin         0.102    0.066    0.130    34
+OpenAI_Codex  0.152    0.066    0.235    38
+
+NOTA: la media puo' essere alzata da poche PR con density molto
+alta; confrontare sempre con la mediana. Le metriche per-funzione
+(CCN, %smell) sono piu' robuste di questa per-PR.
+
+========================================================================
+2. SUBJECT RIGHTS — Data Leakage (Gitleaks)
+========================================================================
+
+Totale finding: 23 su 8 PR distinte
+
+--- Finding grezzi per agente ---
+agent
+Claude_Code     10
+Copilot          7
+Cursor           0
+Devin            0
+OpenAI_Codex     6
+
+--- Tipi di secret rilevati ---
+RuleID
+generic-api-key    19
+private-key         4
+
+--- Leak NORMALIZZATI per 1000 funzioni analizzate ---
+              leak_grezzi  n_funzioni  leak_per_1000_funz
+agent                                                    
+Claude_Code            10       21134               0.473
+Copilot                 7        6379               1.097
+Cursor                  0        3452               0.000
+Devin                   0        3175               0.000
+OpenAI_Codex            6        1899               3.160
+
+NOTA: la normalizzazione puo' ribaltare la classifica grezza —
+un agente con molti leak assoluti ma tanto codice puo' risultare
+piu' 'pulito' per unita' di codice di uno con pochi leak ma poco codice.
+
+------------------------------------------------------------
+VALIDAZIONE (deduplicazione + controllo manuale)
+------------------------------------------------------------
+
+Finding grezzi: 23  ->  segreti univoci: 14 (9 erano duplicati)
+
+--- Esito per categoria (su segreti univoci) ---
+categoria_finale
+FP_test         8
+FP_notsecret    5
+FP_dev_ci       1
+
+>>> VERI POSITIVI (leak reali): 0
+>>> Falsi positivi:             14  su 14 segreti univoci
+
+RISULTATO: nessun leak reale di produzione nel campione.
+Tutti i finding grezzi si sono rivelati falsi positivi
+(placeholder, fixtures di test, checksum di dipendenze,
+valori pubblici noti, chiavi di sviluppo/CI).
+
+NOTA METODOLOGICA: il conteggio grezzo (23 finding) avrebbe
+suggerito differenze tra agenti; la validazione mostra che il
+dato reale e' azzerato dai falsi positivi. Illustra perche' i
+risultati automatici di Gitleaks vanno sempre validati a mano.
+
+========================================================================
+3. IP RIGHTS (ScanCode)
+========================================================================
+
+Conflitti di licenza: 0
+Casi di copyright stripping: 0
+
+NOTA: 0 conflitti e' il risultato atteso dopo il filtro sui file di
+lock auto-generati (package-lock.json, ecc.) che generavano falsi
+positivi. La tabella di compatibilita' licenze e' pero' semplificata:
+una matrice SPDX completa potrebbe rilevare casi non catturati.
+
+========================================================================
+4. FAIRNESS (LLM-as-judge)
+========================================================================
+
+PR valutate: 250 | errori di parsing: 0
+
+--- Distribuzione punteggio 'overall_ethics' ---
+score_overall_ethics
+2.0      1
+3.0    248
+4.0      1
+
+--- PR con almeno un punteggio non-neutro (!=3): 4 su 250 ---
+Conteggio casi non-neutri per agente (NON medie - vedi nota):
+  Claude_Code     3
+  Copilot         1
+  Cursor          0
+  Devin           0
+  OpenAI_Codex    0
+
+Dettaglio casi non-neutri:
+     pr_id       agent  score_demographic_fairness  score_accessibility_inclusion  score_inclusive_language  score_overall_ethics
+3263934382 Claude_Code                         3.0                            2.0                       3.0                   2.0
+3271988317 Claude_Code                         3.0                            4.0                       3.0                   4.0
+3171901980 Claude_Code                         3.0                            2.0                       3.0                   3.0
+3253643080     Copilot                         3.0                            4.0                       3.0                   3.0
+
+NOTA: NON si riportano le medie dei punteggi per agente. Con 246 PR su 250 a valore neutro (3), le medie sarebbero tutte ~3.0 e le differenze (dovute a 1-2 casi isolati su 50 PR per agente) NON sarebbero statisticamente significative: darebbero l'impressione fuorviante di un pattern sistematico tra agenti inesistente.
+
+------------------------------------------------------------
+VALIDAZIONE MANUALE (accordo umano-judge)
+------------------------------------------------------------
+
+PR validate a mano: 25
+Accordo esatto:     98.0%
+Accordo entro +/-1: 100.0%
+Differenza media assoluta: 0.02
+
+Nessun disaccordo forte (differenza >= 2): l'accordo tra
+giudizio umano e automatico e' pieno. Questo valida
+l'affidabilita' del judge sul dataset finale.
+
+========================================================================
+5. COPERTURA E RECUPERO FILE
+========================================================================
+
+File totali attesi: 8803
+  recuperati (after=True): 7667 (87.1%)
+  falliti (after=False):   719 (8.2%)
+  rimossi (n/a_removed):   417 (4.7%)
+
+--- Impatto reale sulle metriche di complessita' ---
+Dei 719 file falliti, solo 381 (53.0%) erano CODICE.
+Perdita sul codice analizzabile: 381/7667 = 4.97%
+(Il resto erano config/documentazione, che Lizard non analizza:
+ il loro mancato recupero non impatta le metriche di complessita'.)
+
+--- Tasso di fallimento file per agente (%) ---
+agent
+Claude_Code      3.50
+Copilot          6.97
+Cursor          14.49
+Devin           12.80
+OpenAI_Codex     8.21
+
+--- Copertura PR: PR con almeno un file recuperato, per agente ---
+agent
+Claude_Code     49
+Copilot         50
+Cursor          46
+Devin           45
+OpenAI_Codex    48
+
+NOTA METODOLOGICA: 'PR completamente recuperata' NON e' una buona
+metrica di confronto — dipende dal numero di file per PR piu' che
+dalla qualita' del recupero (una PR con 1 solo file mancante su 20
+risulta 'parziale'). Usare il tasso di fallimento file e la
+copertura per PR (almeno un file), non la % di PR complete.
+
+========================================================================
+SINTESI E LIMITI
+========================================================================
+
+RISULTATI PER DIMENSIONE:
+- Sustainability (Lizard): segnale piu' solido. OpenAI Codex produce il codice
+  piu' complesso per unita' prodotta (CCN mediana doppia, robusto agli outlier),
+  coerente con Dou et al. (2026). Quadro non monodimensionale (Devin sui long
+  method, Copilot sui parametri).
+- Subject Rights (Gitleaks): 23 finding grezzi -> 0 veri leak dopo validazione
+  manuale (tutti falsi positivi: placeholder, fixtures di test, checksum go.sum,
+  valori pubblici noti, chiavi dev/CI).
+- IP Rights (ScanCode): 0 conflitti, 0 copyright stripping dopo il filtro sui
+  file di lock auto-generati.
+- Fairness (LLM-judge): 250 PR valutate, ~0% errori di parsing. Pochi casi non
+  neutri (4 su 250), tutti sulla dimensione accessibilita' e prevalentemente
+  sull'agente che produce le UI piu' estese. Validazione manuale su 25 PR: 98%
+  di accordo esatto umano-judge, 100% entro +/-1, nessun disaccordo forte.
+
+LIMITI DA DICHIARARE:
+- Gitleaks (Subject Rights) e Fairness lavorano sui DIFF, non sui file scaricati:
+  immuni al problema del recupero file. Lizard/ScanCode usano i file: perdita
+  effettiva sul codice ~5%, distribuita e trascurabile.
+- Fairness: il diff inviato al judge e' troncato a 100.000 caratteri (~16% delle
+  PR, quelle genuinamente enormi, resta troncato: limite intrinseco). Un limite
+  precedente piu' basso (10k) distorceva alcuni giudizi su PR grandi; alzandolo
+  il problema e' stato in larga parte risolto. I casi non-neutri sono comunque
+  verificati a mano.
+- Numeri assoluti piccoli per Gitleaks/ScanCode/eventi Fairness: differenze
+  indicative, non prove statistiche forti.
+- Tabella compatibilita' licenze semplificata: da sostituire con matrice SPDX.
+- Metodologicamente: 2 dimensioni su 4 (Subject Rights, IP Rights) hanno prodotto
+  risultati grezzi ingannevoli (23 falsi leak, 41 falsi conflitti) azzerati solo
+  dopo validazione/filtraggio. Il controllo umano sui risultati automatici e' un
+  contributo metodologico centrale della tesi.

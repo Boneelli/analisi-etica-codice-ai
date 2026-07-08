@@ -1,0 +1,6 @@
+agent,n_funzioni,ccn_media,ccn_mediana,perc_high_ccn,perc_long_method,perc_many_params,green_smell_density,leak_grezzi,leak_per_1000_funz
+Claude_Code,21134,2.43,1.0,2.7,4.59,1.21,0.073,10,0.473
+Copilot,6379,2.91,1.0,4.17,3.09,3.73,0.063,7,1.097
+Cursor,3452,2.58,1.0,3.56,5.82,2.03,0.117,0,0.0
+Devin,3175,2.33,1.0,2.55,6.87,1.35,0.102,0,0.0
+OpenAI_Codex,1899,4.31,2.0,6.85,5.63,0.32,0.152,6,3.16

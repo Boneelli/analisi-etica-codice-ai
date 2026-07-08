@@ -1,0 +1,1430 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3090570894\\after"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3090570894.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T153010.090497",
+      "end_timestamp": "2026-07-01T153035.605415",
+      "output_format_version": "4.1.0",
+      "duration": 25.514933347702026,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 30
+      }
+    }
+  ],
+  "license_detections": [],
+  "files": [
+    {
+      "path": "after",
+      "type": "directory",
+      "name": "after",
+      "base_name": "after",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 30,
+      "dirs_count": 0,
+      "size_count": 968991,
+      "scan_errors": []
+    },
+    {
+      "path": "after/.github__workflows__copilot-setup-steps__e3c909df.yml",
+      "type": "file",
+      "name": ".github__workflows__copilot-setup-steps__e3c909df.yml",
+      "base_name": ".github__workflows__copilot-setup-steps__e3c909df",
+      "extension": ".yml",
+      "size": 1043,
+      "date": "2026-07-01",
+      "sha1": "92798b1dbbb492c4aae39caf7de4c919a3be3a8e",
+      "md5": "b3b2ab12ad7dca06f4844e2df7e198d4",
+      "sha256": "647f3d37f3ee1f1833429db27a3a1c7453ce5f835592bb5c5055f6672a113ba5",
+      "sha1_git": "fe60e4867c7985125d3bc21d91b53526f8c32aab",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__codegen__codegen__07bb73b8.py",
+      "type": "file",
+      "name": "dace__codegen__codegen__07bb73b8.py",
+      "base_name": "dace__codegen__codegen__07bb73b8",
+      "extension": ".py",
+      "size": 11763,
+      "date": "2026-07-01",
+      "sha1": "b01769daf8863008ffc0a951d2cdad2b56ac2f0c",
+      "md5": "01829498cd9e545e1449696f73ec300c",
+      "sha256": "7936ae00176afc343f4c99d227ba20b9ac59003c4ff66c0e2d9e62d393289871",
+      "sha1_git": "ad997c33a066e3c03ef25ea31b93d4aed181eac1",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2021 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__codegen__common__0c9b5278.py",
+      "type": "file",
+      "name": "dace__codegen__common__0c9b5278.py",
+      "base_name": "dace__codegen__common__0c9b5278",
+      "extension": ".py",
+      "size": 6494,
+      "date": "2026-07-01",
+      "sha1": "b2b06c603e0bac45bd9f1eb9ef5058ec51590778",
+      "md5": "82f44eb282f9a726729784f307913a9e",
+      "sha256": "6f50a3a5de2eff6a2711821f45487fbd24b420de7d6c85d203f07f97080cf5de",
+      "sha1_git": "d8524eacbcb65cc5f3719af3ba85b12011827d97",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2023 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__codegen__targets__cpp__a4464811.py",
+      "type": "file",
+      "name": "dace__codegen__targets__cpp__a4464811.py",
+      "base_name": "dace__codegen__targets__cpp__a4464811",
+      "extension": ".py",
+      "size": 66433,
+      "date": "2026-07-01",
+      "sha1": "847c4296c9d9686ba63661d927e4eab9d791fba1",
+      "md5": "4c7193e9379f54f535fc3134c9ef26e1",
+      "sha256": "eaf5e3db3bd8bab77a0e9995083644ed9acc8dfd17487f59ee35f9e4f917486c",
+      "sha1_git": "014d72501d56b3473793b26147255feb59775d03",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2023 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__codegen__targets__cpu__ebcbc2cd.py",
+      "type": "file",
+      "name": "dace__codegen__targets__cpu__ebcbc2cd.py",
+      "base_name": "dace__codegen__targets__cpu__ebcbc2cd",
+      "extension": ".py",
+      "size": 111353,
+      "date": "2026-07-01",
+      "sha1": "a01ececee78fd01a390f032baf7f9e8002f8c8f4",
+      "md5": "4bf37c78b24dbf131d92f2f1950af91b",
+      "sha256": "2f49083a3d11697404069be184963c8ca850c5491f561405407f3d885427c310",
+      "sha1_git": "65b4e9e21669728e47f0065a4dcaad4be943d279",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2021 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__codegen__targets__cuda__bd13a561.py",
+      "type": "file",
+      "name": "dace__codegen__targets__cuda__bd13a561.py",
+      "base_name": "dace__codegen__targets__cuda__bd13a561",
+      "extension": ".py",
+      "size": 150223,
+      "date": "2026-07-01",
+      "sha1": "684cf86d1f87ceb0b0e7c22d5e1bfba8b9f35930",
+      "md5": "542dfc1c5a1ee0309cdf9516136f40c1",
+      "sha256": "368a48f0c47c8876d4c74adf9b3f712c56eb30032d95758a487cfb0bb1e94a6b",
+      "sha1_git": "c83c10674b2a0ee7f6c63920bcc7447934d66fc0",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2021 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__codegen__targets__xilinx__cfd6c935.py",
+      "type": "file",
+      "name": "dace__codegen__targets__xilinx__cfd6c935.py",
+      "base_name": "dace__codegen__targets__xilinx__cfd6c935",
+      "extension": ".py",
+      "size": 70108,
+      "date": "2026-07-01",
+      "sha1": "57630c9b31b86282f106a1afc3b705da8afadd32",
+      "md5": "57794cb34a911d69162f546a2eeae395",
+      "sha256": "8cbb5cb4b8e6803c25d0cd2da3f2a807911722a5bff17113d915100ba4a47c66",
+      "sha1_git": "64e56b39d2f984aca57399116ae2f2c26d2b5aaf",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2021 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__codegen__tools__type_inference__0f2a35c1.py",
+      "type": "file",
+      "name": "dace__codegen__tools__type_inference__0f2a35c1.py",
+      "base_name": "dace__codegen__tools__type_inference__0f2a35c1",
+      "extension": ".py",
+      "size": 23540,
+      "date": "2026-07-01",
+      "sha1": "86719a797586f5cb84ea5c67ed1609d7a4e9e2eb",
+      "md5": "5ce6aa6779d653627ea4acc5aa538435",
+      "sha256": "c711b321a85048f9b124c1d5b56f026d248ff76d328d37f4c6fa319ab3f36985",
+      "sha1_git": "e78ac1239da4e5b5695d71df58e31b982fff5e78",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2021 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__config__a2f1f971.py",
+      "type": "file",
+      "name": "dace__config__a2f1f971.py",
+      "base_name": "dace__config__a2f1f971",
+      "extension": ".py",
+      "size": 15263,
+      "date": "2026-07-01",
+      "sha1": "1adf00d3272adf2a638023923201eb00eaae21e5",
+      "md5": "b9bdbca420a35c95cd074ccd3b3bbd4f",
+      "sha256": "b0041746ad0c626f915ce990231993190a39bbc868e912033951addc0bcaa367",
+      "sha1_git": "85b2d6890528d22503fd0ab75ad6df3127da332e",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2022 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__data__bad8816a.py",
+      "type": "file",
+      "name": "dace__data__bad8816a.py",
+      "base_name": "dace__data__bad8816a",
+      "extension": ".py",
+      "size": 83557,
+      "date": "2026-07-01",
+      "sha1": "503f83c29b0f3d1177b1abab9a4d57892cbd29df",
+      "md5": "85ade700974cb0056e6906b6d2c1a58e",
+      "sha256": "262e34f06b6fa15e782bca8d7d4f6a34a810a1953ebf5f531964b5e4417dee8e",
+      "sha1_git": "3279aff63bf13e67adb043845a1001e4cb829bf7",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, UTF-8 Unicode text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2023 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__memlet__b189d50b.py",
+      "type": "file",
+      "name": "dace__memlet__b189d50b.py",
+      "base_name": "dace__memlet__b189d50b",
+      "extension": ".py",
+      "size": 30754,
+      "date": "2026-07-01",
+      "sha1": "829779088a3c75727ab7777e26647896620a2448",
+      "md5": "80088acc17334a9fb1bf4eca90e906b4",
+      "sha256": "412cbe2bd7a680b0a3b4641cf510e07e6bdb1d607363eba7710ac251ac56cad2",
+      "sha1_git": "090a7890faceeaa2d953541b67adac2b2a425f99",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2021 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__properties__2cb4fa06.py",
+      "type": "file",
+      "name": "dace__properties__2cb4fa06.py",
+      "base_name": "dace__properties__2cb4fa06",
+      "extension": ".py",
+      "size": 46177,
+      "date": "2026-07-01",
+      "sha1": "cda4fecf2ca6cc64cb9864933b50b93008ce143c",
+      "md5": "d5b840b42c4660ae1c92b209f0ee8547",
+      "sha256": "cbc397abc2b658b13e4821aaa94db9ee05dbbc2cf8014d5b81a889c31478eafe",
+      "sha1_git": "b0658d8572c03cb80c3fef9da4d787261a0a757f",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2023 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__sdfg__sdfg__b4e0a607.py",
+      "type": "file",
+      "name": "dace__sdfg__sdfg__b4e0a607.py",
+      "base_name": "dace__sdfg__sdfg__b4e0a607",
+      "extension": ".py",
+      "size": 126521,
+      "date": "2026-07-01",
+      "sha1": "84a134007c7d543aa4372e1eeed838a02b688015",
+      "md5": "b40482d09bc5aa584c7845f702d05c86",
+      "sha256": "6301a9d82fc5eb3523138a38bf2abc9b8439b21ab6f513fed23fbc58b4b70bfa",
+      "sha1_git": "a612ea9f27f0fe6606f8a96e0166584ad535f7c5",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2023 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__sdfg__validation__2b6d2128.py",
+      "type": "file",
+      "name": "dace__sdfg__validation__2b6d2128.py",
+      "base_name": "dace__sdfg__validation__2b6d2128",
+      "extension": ".py",
+      "size": 55182,
+      "date": "2026-07-01",
+      "sha1": "cd6fad4220e5a4eadad8396145e1acdcd72100c1",
+      "md5": "34aaccd95e39333128d55deee35f5132",
+      "sha256": "48cba7ad7c8612630547bb9814e5bf195a21f9ba0fa9a24806ed23633dee246e",
+      "sha1_git": "51855e3eea6ad0a67aef50e31027878a5e252063",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2024 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__symbolic__1d3693a5.py",
+      "type": "file",
+      "name": "dace__symbolic__1d3693a5.py",
+      "base_name": "dace__symbolic__1d3693a5",
+      "extension": ".py",
+      "size": 57825,
+      "date": "2026-07-01",
+      "sha1": "f4d6835ee2c6e0c442aaffdbc78515e9dfa25d68",
+      "md5": "5f4e91d0ac9750a5e40b5d32394357e3",
+      "sha256": "9ac37104eed1e5e90d0e74f5d6341ce1d8d5e7382b9dc0b864691862e97ce069",
+      "sha1_git": "cd3a67e3ded08c26a5a0d167178d4efc7f045b27",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2024 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__transformation__passes____init____05500c78.py",
+      "type": "file",
+      "name": "dace__transformation__passes____init____05500c78.py",
+      "base_name": "dace__transformation__passes____init____05500c78",
+      "extension": ".py",
+      "size": 861,
+      "date": "2026-07-01",
+      "sha1": "1b405ab89f714cdf315e0a7091441029e4f54d8c",
+      "md5": "b080b12fbb1de65180c75ad1c85ea826",
+      "sha256": "59168c0a4314945e3571890d38b8b2c16152b449bd40c12b3dc2f2d3663a7283",
+      "sha1_git": "ec26bc185600446685791e08a1c17501a5b0fd29",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__transformation__passes__simplification__continue_to_condition__ce905ca9.py",
+      "type": "file",
+      "name": "dace__transformation__passes__simplification__continue_to_condition__ce905ca9.py",
+      "base_name": "dace__transformation__passes__simplification__continue_to_condition__ce905ca9",
+      "extension": ".py",
+      "size": 3511,
+      "date": "2026-07-01",
+      "sha1": "6adac0dc604db6cea7ea2d7439c8923657a1d496",
+      "md5": "08d0556068ff208c6b5f445491d50184",
+      "sha256": "2cf57c75c034f87fbe5270f15ee3fd50083d12d3df07233ef8d83841d32ccdfa",
+      "sha1_git": "62f08ba2968b33cb32517e675de1115909c2e1eb",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2025 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__transformation__passes__simplify__2ad5db1f.py",
+      "type": "file",
+      "name": "dace__transformation__passes__simplify__2ad5db1f.py",
+      "base_name": "dace__transformation__passes__simplify__2ad5db1f",
+      "extension": ".py",
+      "size": 7602,
+      "date": "2026-07-01",
+      "sha1": "de76d0c8011bfdeea41d1874b79c0aadb47d0b43",
+      "md5": "c185aee62ec779eb58239e2691606c56",
+      "sha256": "2d66201e1536300e6b9bc56835748eb28fce3ff0f8c40795e3e4c1a8d7ef1564",
+      "sha1_git": "d73b3e6aa1f191da96c425fef6790008f0be3d72",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2024 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/dace__transformation__passes__symbol_propagation__f84a0978.py",
+      "type": "file",
+      "name": "dace__transformation__passes__symbol_propagation__f84a0978.py",
+      "base_name": "dace__transformation__passes__symbol_propagation__f84a0978",
+      "extension": ".py",
+      "size": 9201,
+      "date": "2026-07-01",
+      "sha1": "a8d50cff3a62761636b05abf566ac5114e739904",
+      "md5": "50573f25d97e962b4d9fcf09f222394a",
+      "sha256": "2c829bec06adbe09523b7c4502de14bcd4e2524ab876db76780e44856071c6aa",
+      "sha1_git": "7ee4a371e425827ada5e0c56c79430d8d64e0130",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2025 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/tests__codegen__gpu_memcpy_test__32e293f8.py",
+      "type": "file",
+      "name": "tests__codegen__gpu_memcpy_test__32e293f8.py",
+      "base_name": "tests__codegen__gpu_memcpy_test__32e293f8",
+      "extension": ".py",
+      "size": 13047,
+      "date": "2026-07-01",
+      "sha1": "8706dc49d4ac227217d136d22c91a06ce8f155ad",
+      "md5": "8def1d42df87d434826da6e5c90a6a32",
+      "sha256": "b1aac0e2a5e22b7e5b6efbfe8e47f60d80b876c15aac1f1f125b8aad5257932f",
+      "sha1_git": "c7a3525f95e9f14f9d56efecff18553ed4697829",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2025 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/tests__config_test__136060f8.py",
+      "type": "file",
+      "name": "tests__config_test__136060f8.py",
+      "base_name": "tests__config_test__136060f8",
+      "extension": ".py",
+      "size": 2001,
+      "date": "2026-07-01",
+      "sha1": "b637fd08d6170e32db78cf1badfa6e7cc755d852",
+      "md5": "306f6d8026ff945446d4b09c14c3ee65",
+      "sha256": "178b29de9481a77c033ecbdddaeb3440006be498702bb622f6534593f52819f4",
+      "sha1_git": "224bf4704acc16cba6044d854366922ab49dca1e",
+      "mime_type": "text/plain",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2021 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/tests__memlet_lifetime_validation_test__677d752d.py",
+      "type": "file",
+      "name": "tests__memlet_lifetime_validation_test__677d752d.py",
+      "base_name": "tests__memlet_lifetime_validation_test__677d752d",
+      "extension": ".py",
+      "size": 2952,
+      "date": "2026-07-01",
+      "sha1": "1e416d2203b76cad550f45237a17018fb233e2e4",
+      "md5": "3bafc9dae13e6b5131f0662d4c943b78",
+      "sha256": "733a741fa13f1f4e04365b27109d99f0503d816ef01ed12167c39b46fb695849",
+      "sha1_git": "db6ac9cc85f4c36e5137a41a7d337b2291a0029a",
+      "mime_type": "text/plain",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2021 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/tests__passes__simplification__continue_to_condition_test__7e2de884.py",
+      "type": "file",
+      "name": "tests__passes__simplification__continue_to_condition_test__7e2de884.py",
+      "base_name": "tests__passes__simplification__continue_to_condition_test__7e2de884",
+      "extension": ".py",
+      "size": 10551,
+      "date": "2026-07-01",
+      "sha1": "8eb0000568c2edf0d4b37af87d471dc72a854f01",
+      "md5": "ee9cf0ee1900ab747a9d206c7daaaa93",
+      "sha256": "6055b79590d6be2ceae3e09f6ea3e6230ce6fb9dc768c6a624cf577eb85af4d4",
+      "sha1_git": "9ea57b1a6654501cff2b4fbc1a3c95bba20c1fa2",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2025 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/tests__passes__symbol_propagation_test__5412854a.py",
+      "type": "file",
+      "name": "tests__passes__symbol_propagation_test__5412854a.py",
+      "base_name": "tests__passes__symbol_propagation_test__5412854a",
+      "extension": ".py",
+      "size": 8416,
+      "date": "2026-07-01",
+      "sha1": "b968d40e7e7ee2a78588c1f6bd9a8603934e2384",
+      "md5": "86dfa2f9e44df2c1f397cbe41c51a613",
+      "sha256": "78da0d4e1cc3bc73c8b4cca42cc5cb0f0af9bb03dae4fcfb0d984de363079489",
+      "sha1_git": "4af1597837d94aaef703989e809c67c9bb22c0d6",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2025 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/tests__python_frontend__identifiers_and_keywords_test__4a38ea93.py",
+      "type": "file",
+      "name": "tests__python_frontend__identifiers_and_keywords_test__4a38ea93.py",
+      "base_name": "tests__python_frontend__identifiers_and_keywords_test__4a38ea93",
+      "extension": ".py",
+      "size": 4605,
+      "date": "2026-07-01",
+      "sha1": "c83509d68351ea2e405be17bdea6df794fa78f08",
+      "md5": "0d8df1352867346095c8200d73c8a3ce",
+      "sha256": "66ddb1e54212b077a8d63349ff4c019e4217bd5e75dcdc5093222d8ac4cb7bf6",
+      "sha1_git": "b3ef2f875eb48da93dfc2f1e5182eee267a2a8c4",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2021 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/tests__python_frontend__loop_regions_test__42dd7c35.py",
+      "type": "file",
+      "name": "tests__python_frontend__loop_regions_test__42dd7c35.py",
+      "base_name": "tests__python_frontend__loop_regions_test__42dd7c35",
+      "extension": ".py",
+      "size": 15201,
+      "date": "2026-07-01",
+      "sha1": "1ff45ae66cb5589f4192dd52d9652b8aa4454dcc",
+      "md5": "f8fe30103078b9647c6788cd4655d06f",
+      "sha256": "a85a7dca829306a6a89cf68f4c538a8de6d3938cfe90a29d405ee0fdee0ef68e",
+      "sha1_git": "7d372141a5079984c5f765bc2ff0970949c5c4e4",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2024 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/tests__python_frontend__loops_test__eff83234.py",
+      "type": "file",
+      "name": "tests__python_frontend__loops_test__eff83234.py",
+      "base_name": "tests__python_frontend__loops_test__eff83234",
+      "extension": ".py",
+      "size": 13112,
+      "date": "2026-07-01",
+      "sha1": "fba7b9998a6b523b76ff9fde38c9d753a0e67fe9",
+      "md5": "270f71f9747964d4762fb8c4fd3c0730",
+      "sha256": "da21e44c308b994dbb1f8c11c83efc1c394ff2766e621f2bf027ed33e60ad607",
+      "sha1_git": "ca1c0250f259e987ef3102e58c29dbeb183dfe84",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2021 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/tests__sdfg__validation__subset_size_test__8e95a9aa.py",
+      "type": "file",
+      "name": "tests__sdfg__validation__subset_size_test__8e95a9aa.py",
+      "base_name": "tests__sdfg__validation__subset_size_test__8e95a9aa",
+      "extension": ".py",
+      "size": 2371,
+      "date": "2026-07-01",
+      "sha1": "9e5b9203c5f80c48f3bacc09bbdb995a42feebb5",
+      "md5": "2ae3056fe95eb765f0de4252a2591679",
+      "sha256": "75a539cda818b0d003d5d3a4f6eb36e7719286b6e1c035a43749f222d08d73ae",
+      "sha1_git": "3b35978bc3868664c29ff98f6e787f283e8e17ac",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2025 ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/tests__undefined_symbol_in_sdfg_test__8babf7b2.py",
+      "type": "file",
+      "name": "tests__undefined_symbol_in_sdfg_test__8babf7b2.py",
+      "base_name": "tests__undefined_symbol_in_sdfg_test__8babf7b2",
+      "extension": ".py",
+      "size": 13697,
+      "date": "2026-07-01",
+      "sha1": "6f20932a794af536afc25d2e45d2ee3c2575db5b",
+      "md5": "c3d5e1ca1772b945f92d6402fc59ed61",
+      "sha256": "d44ea0f37a03c7d9e418bd2c211a607aa99654cab4a88a4506e538234efbc94b",
+      "sha1_git": "db4cf59344dbc66c8533716478bd6f697ff6b07d",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2025 ETH Zurich and the DaCe authors",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/tests__undefined_symbol_test__70dde409.py",
+      "type": "file",
+      "name": "tests__undefined_symbol_test__70dde409.py",
+      "base_name": "tests__undefined_symbol_test__70dde409",
+      "extension": ".py",
+      "size": 5627,
+      "date": "2026-07-01",
+      "sha1": "2d111e9f0ed0a9e0ab551f01c52c986f38d8bc58",
+      "md5": "e315f94bf23df2a14a35f09882316198",
+      "sha256": "ea550dc8e3a469c152cc484b8020eae0b755d9e79fa2162af173ff0cbf280284",
+      "sha1_git": "bac734f1550f597312e18f985471fc097d43ea2d",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2019-2025 ETH Zurich and the DaCe authors",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "holders": [
+        {
+          "holder": "ETH Zurich and the DaCe authors",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

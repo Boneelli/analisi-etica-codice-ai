@@ -1,0 +1,7 @@
+{
+  "_comment": "Soglie indicative basate su letteratura SE/Green SE comune (es. McCabe per CCN, Fowler per Long Method/Long Parameter List). DA CALIBRARE e motivare con riferimenti bibliografici nella tesi. Valori troppo permissivi sottostimano la densita' di smell, troppo stringenti la sovrastimano.",
+  "high_ccn": 10,
+  "long_method_nloc": 50,
+  "too_many_parameters": 5,
+  "deep_nesting": 4
+}

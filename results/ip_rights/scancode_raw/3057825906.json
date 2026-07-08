@@ -1,0 +1,301 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3057825906\\after"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3057825906.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T145142.950167",
+      "end_timestamp": "2026-07-01T145148.333414",
+      "output_format_version": "4.1.0",
+      "duration": 5.383259057998657,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 3
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "unknown_license_reference-b5628722-e3d5-648a-3d40-98669c584ce8",
+      "license_expression": "unknown-license-reference",
+      "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+      "detection_count": 3,
+      "reference_matches": [
+        {
+          "license_expression": "unknown-license-reference",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+          "from_file": "after/e2e-tests__playwright__specs__functional__channels__search__search_box_clear_button.spec__f67cb818.ts",
+          "start_line": 2,
+          "end_line": 2,
+          "matcher": "2-aho",
+          "score": 100.0,
+          "matched_length": 6,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "unknown-license-reference_306.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_306.RULE"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "after",
+      "type": "directory",
+      "name": "after",
+      "base_name": "after",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 3,
+      "dirs_count": 0,
+      "size_count": 17669,
+      "scan_errors": []
+    },
+    {
+      "path": "after/e2e-tests__playwright__specs__functional__channels__search__search_box_clear_button.spec__f67cb818.ts",
+      "type": "file",
+      "name": "e2e-tests__playwright__specs__functional__channels__search__search_box_clear_button.spec__f67cb818.ts",
+      "base_name": "e2e-tests__playwright__specs__functional__channels__search__search_box_clear_button.spec__f67cb818",
+      "extension": ".ts",
+      "size": 1619,
+      "date": "2026-07-01",
+      "sha1": "a96fc6facd8938cd8cc1b5deebc4a6ee4289d2e8",
+      "md5": "f216899a756b876c405a2318808c7384",
+      "sha256": "8b7a4735f39c24f4fab8d2df42bd0b7e7e75284f694211c27dda95c9dd1e6e0a",
+      "sha1_git": "013b97d2aeadd31f0a58f0c3dd31527f71f872dc",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "TypeScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "unknown-license-reference",
+      "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+      "license_detections": [
+        {
+          "license_expression": "unknown-license-reference",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+          "matches": [
+            {
+              "license_expression": "unknown-license-reference",
+              "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+              "from_file": "after/e2e-tests__playwright__specs__functional__channels__search__search_box_clear_button.spec__f67cb818.ts",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 6,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "unknown-license-reference_306.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_306.RULE"
+            }
+          ],
+          "identifier": "unknown_license_reference-b5628722-e3d5-648a-3d40-98669c584ce8"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 3.16,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) 2015-present Mattermost, Inc.",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Mattermost, Inc.",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/webapp__channels__src__components__new_search__new_search__a5e5efb9.tsx",
+      "type": "file",
+      "name": "webapp__channels__src__components__new_search__new_search__a5e5efb9.tsx",
+      "base_name": "webapp__channels__src__components__new_search__new_search__a5e5efb9",
+      "extension": ".tsx",
+      "size": 11892,
+      "date": "2026-07-01",
+      "sha1": "98b5c8bcb3d408fda8f54629167b0982120977a5",
+      "md5": "2b927be86d4c7fb637817f2278f5be83",
+      "sha256": "5b6c18c22daa842a80ef76c36f85040d69d09a1ab8b781cd68ebdc764a6abcaf",
+      "sha1_git": "89b6329a385f8c979182fb2510ce3fd8b21b5aa0",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "TypeScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "unknown-license-reference",
+      "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+      "license_detections": [
+        {
+          "license_expression": "unknown-license-reference",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+          "matches": [
+            {
+              "license_expression": "unknown-license-reference",
+              "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+              "from_file": "after/webapp__channels__src__components__new_search__new_search__a5e5efb9.tsx",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 6,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "unknown-license-reference_306.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_306.RULE"
+            }
+          ],
+          "identifier": "unknown_license_reference-b5628722-e3d5-648a-3d40-98669c584ce8"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.69,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) 2015-present Mattermost, Inc.",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Mattermost, Inc.",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/webapp__channels__src__components__new_search__search_box_input__7ed124d0.tsx",
+      "type": "file",
+      "name": "webapp__channels__src__components__new_search__search_box_input__7ed124d0.tsx",
+      "base_name": "webapp__channels__src__components__new_search__search_box_input__7ed124d0",
+      "extension": ".tsx",
+      "size": 4158,
+      "date": "2026-07-01",
+      "sha1": "31f05bee4e23dbc52380dfd111bac345b6b6afb9",
+      "md5": "47af2cdfe3cb4ac5518195e9989f3f70",
+      "sha256": "e2b3caa89591cd65509f1d38228457fee15f3f4e12f5caacfcb1a9c04269228f",
+      "sha1_git": "82d7c1e4068ca0da5e3f2b1e8528bee718f31e23",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "TypeScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "unknown-license-reference",
+      "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+      "license_detections": [
+        {
+          "license_expression": "unknown-license-reference",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+          "matches": [
+            {
+              "license_expression": "unknown-license-reference",
+              "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+              "from_file": "after/webapp__channels__src__components__new_search__search_box_input__7ed124d0.tsx",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 6,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "unknown-license-reference_306.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_306.RULE"
+            }
+          ],
+          "identifier": "unknown_license_reference-b5628722-e3d5-648a-3d40-98669c584ce8"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 1.74,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) 2015-present Mattermost, Inc.",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Mattermost, Inc.",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

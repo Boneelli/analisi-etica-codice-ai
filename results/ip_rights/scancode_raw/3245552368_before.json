@@ -1,0 +1,731 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3245552368\\before"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3245552368_before.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T144427.365965",
+      "end_timestamp": "2026-07-01T144442.204749",
+      "output_format_version": "4.1.0",
+      "duration": 14.83879804611206,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 9
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "bsl_1_0-9a283deb-f3f0-278e-018c-5f86c292b5d0",
+      "license_expression": "bsl-1.0",
+      "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+      "detection_count": 7,
+      "reference_matches": [
+        {
+          "license_expression": "bsl-1.0",
+          "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+          "from_file": "before/pkg__server__config__01232189.go",
+          "start_line": 3,
+          "end_line": 4,
+          "matcher": "3-seq",
+          "score": 23.64,
+          "matched_length": 13,
+          "match_coverage": 23.64,
+          "rule_relevance": 100,
+          "rule_identifier": "bsl-1.0_1.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsl-1.0_1.RULE"
+        }
+      ]
+    },
+    {
+      "identifier": "unknown_license_reference-ce2862d2-7e42-c597-f92a-9c6116fc964f",
+      "license_expression": "unknown-license-reference",
+      "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+      "detection_count": 2,
+      "reference_matches": [
+        {
+          "license_expression": "unknown-license-reference",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+          "from_file": "before/pkg__base__test_server_args__e1f4f435.go",
+          "start_line": 3,
+          "end_line": 3,
+          "matcher": "3-seq",
+          "score": 53.33,
+          "matched_length": 8,
+          "match_coverage": 53.33,
+          "rule_relevance": 100,
+          "rule_identifier": "license-intro_11.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_11.RULE"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "before",
+      "type": "directory",
+      "name": "before",
+      "base_name": "before",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 9,
+      "dirs_count": 0,
+      "size_count": 470429,
+      "scan_errors": []
+    },
+    {
+      "path": "before/pkg__base__test_server_args__e1f4f435.go",
+      "type": "file",
+      "name": "pkg__base__test_server_args__e1f4f435.go",
+      "base_name": "pkg__base__test_server_args__e1f4f435",
+      "extension": ".go",
+      "size": 29088,
+      "date": "2026-07-01",
+      "sha1": "da0eba3cc520ad9ce68b718e92e43b265a712fc8",
+      "md5": "22fd82e9f88b15a528aa52b9cd4b0ef8",
+      "sha256": "37db0fb6b7aa05ff62238074c450c5854894a6dd95a0b810ae865c1afd9b4a4c",
+      "sha1_git": "922fc4db8bc26311170913c5aa7f89dbefbff30c",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "Go",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "unknown-license-reference",
+      "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+      "license_detections": [
+        {
+          "license_expression": "unknown-license-reference",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+          "matches": [
+            {
+              "license_expression": "unknown-license-reference",
+              "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+              "from_file": "before/pkg__base__test_server_args__e1f4f435.go",
+              "start_line": 3,
+              "end_line": 3,
+              "matcher": "3-seq",
+              "score": 53.33,
+              "matched_length": 8,
+              "match_coverage": 53.33,
+              "rule_relevance": 100,
+              "rule_identifier": "license-intro_11.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_11.RULE"
+            }
+          ],
+          "identifier": "unknown_license_reference-ce2862d2-7e42-c597-f92a-9c6116fc964f"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.23,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2016 The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/pkg__server__config__01232189.go",
+      "type": "file",
+      "name": "pkg__server__config__01232189.go",
+      "base_name": "pkg__server__config__01232189",
+      "extension": ".go",
+      "size": 41815,
+      "date": "2026-07-01",
+      "sha1": "b2f491f2fc250047a597a7ec3afaa8094eadf20f",
+      "md5": "cf5c18520153e9eadebc949a109d0a81",
+      "sha256": "15817de0ba54a56ac521877c2e97aa6af3d2456e727d53957890f7f52807d2e5",
+      "sha1_git": "60734d70946899a6b15eae53604e8a9c6b936efa",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "Go",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "bsl-1.0",
+      "detected_license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+      "license_detections": [
+        {
+          "license_expression": "bsl-1.0",
+          "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+          "matches": [
+            {
+              "license_expression": "bsl-1.0",
+              "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+              "from_file": "before/pkg__server__config__01232189.go",
+              "start_line": 3,
+              "end_line": 4,
+              "matcher": "3-seq",
+              "score": 23.64,
+              "matched_length": 13,
+              "match_coverage": 23.64,
+              "rule_relevance": 100,
+              "rule_identifier": "bsl-1.0_1.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsl-1.0_1.RULE"
+            }
+          ],
+          "identifier": "bsl_1_0-9a283deb-f3f0-278e-018c-5f86c292b5d0"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.26,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2015 The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/pkg__server__server_controller_new_server__0e192fa3.go",
+      "type": "file",
+      "name": "pkg__server__server_controller_new_server__0e192fa3.go",
+      "base_name": "pkg__server__server_controller_new_server__0e192fa3",
+      "extension": ".go",
+      "size": 15462,
+      "date": "2026-07-01",
+      "sha1": "17d5a57d1c316921106d15f09acb637de5aaeb22",
+      "md5": "03abd26608dacc6e94d8c2de82218a1b",
+      "sha256": "7e965ffe5329f5f1ff880c9035ae2489ffd85330c5539b976de34714642961be",
+      "sha1_git": "59c666d032c697f3e2ed9db12cb06e4f5720a9ec",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "Go",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "bsl-1.0",
+      "detected_license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+      "license_detections": [
+        {
+          "license_expression": "bsl-1.0",
+          "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+          "matches": [
+            {
+              "license_expression": "bsl-1.0",
+              "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+              "from_file": "before/pkg__server__server_controller_new_server__0e192fa3.go",
+              "start_line": 3,
+              "end_line": 4,
+              "matcher": "3-seq",
+              "score": 23.64,
+              "matched_length": 13,
+              "match_coverage": 23.64,
+              "rule_relevance": 100,
+              "rule_identifier": "bsl-1.0_1.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsl-1.0_1.RULE"
+            }
+          ],
+          "identifier": "bsl_1_0-9a283deb-f3f0-278e-018c-5f86c292b5d0"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.73,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2023 The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/pkg__server__server_sql__7a1c35c3.go",
+      "type": "file",
+      "name": "pkg__server__server_sql__7a1c35c3.go",
+      "base_name": "pkg__server__server_sql__7a1c35c3",
+      "extension": ".go",
+      "size": 84350,
+      "date": "2026-07-01",
+      "sha1": "22e9522ec7d400c32b46439d9a3ec88bb27055bf",
+      "md5": "bd3b0a95f444f36b3a5cdbedf4293ab4",
+      "sha256": "f31ac689bd2195c976ae9ba3a066fe5f7f63a18e7976c6b77345d6c8b34eb733",
+      "sha1_git": "1b72988cbd7b0cf66c3697b856ba94adc872f5b9",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "Go",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "bsl-1.0",
+      "detected_license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+      "license_detections": [
+        {
+          "license_expression": "bsl-1.0",
+          "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+          "matches": [
+            {
+              "license_expression": "bsl-1.0",
+              "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+              "from_file": "before/pkg__server__server_sql__7a1c35c3.go",
+              "start_line": 3,
+              "end_line": 4,
+              "matcher": "3-seq",
+              "score": 23.64,
+              "matched_length": 13,
+              "match_coverage": 23.64,
+              "rule_relevance": 100,
+              "rule_identifier": "bsl-1.0_1.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsl-1.0_1.RULE"
+            }
+          ],
+          "identifier": "bsl_1_0-9a283deb-f3f0-278e-018c-5f86c292b5d0"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.15,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2020 The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/pkg__sql__catalog__replication__reader_catalog_test__ffefa2a9.go",
+      "type": "file",
+      "name": "pkg__sql__catalog__replication__reader_catalog_test__ffefa2a9.go",
+      "base_name": "pkg__sql__catalog__replication__reader_catalog_test__ffefa2a9",
+      "extension": ".go",
+      "size": 20245,
+      "date": "2026-07-01",
+      "sha1": "0a628c9d195d2761daf99d994e6d4a33bfe003c1",
+      "md5": "30a623946160111e9dbd2c5b3eb06ac9",
+      "sha256": "ee2c626222e6a87b8cc029cd1891b7cc925ce7a94ca9b83c84960da588679c46",
+      "sha1_git": "66404eda54e8cc07793e6d28be6a4ccc39f6ea7e",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "Go",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "bsl-1.0",
+      "detected_license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+      "license_detections": [
+        {
+          "license_expression": "bsl-1.0",
+          "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+          "matches": [
+            {
+              "license_expression": "bsl-1.0",
+              "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+              "from_file": "before/pkg__sql__catalog__replication__reader_catalog_test__ffefa2a9.go",
+              "start_line": 3,
+              "end_line": 4,
+              "matcher": "3-seq",
+              "score": 23.64,
+              "matched_length": 13,
+              "match_coverage": 23.64,
+              "rule_relevance": 100,
+              "rule_identifier": "bsl-1.0_1.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsl-1.0_1.RULE"
+            }
+          ],
+          "identifier": "bsl_1_0-9a283deb-f3f0-278e-018c-5f86c292b5d0"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.48,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2024 The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/pkg__sql__create_stats__fe0d5e86.go",
+      "type": "file",
+      "name": "pkg__sql__create_stats__fe0d5e86.go",
+      "base_name": "pkg__sql__create_stats__fe0d5e86",
+      "extension": ".go",
+      "size": 35726,
+      "date": "2026-07-01",
+      "sha1": "7cf7eff33aabf871907cce06234b1a36f0522e17",
+      "md5": "be9662e1d277342c639f714945a221c2",
+      "sha256": "f133c3075e07466ed5593304f443ffd4456d025c62b01f185995efad128219a0",
+      "sha1_git": "b76f1167c1f79875f985f33df01e904ee8e67add",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "Go",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "bsl-1.0",
+      "detected_license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+      "license_detections": [
+        {
+          "license_expression": "bsl-1.0",
+          "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+          "matches": [
+            {
+              "license_expression": "bsl-1.0",
+              "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+              "from_file": "before/pkg__sql__create_stats__fe0d5e86.go",
+              "start_line": 3,
+              "end_line": 4,
+              "matcher": "3-seq",
+              "score": 23.64,
+              "matched_length": 13,
+              "match_coverage": 23.64,
+              "rule_relevance": 100,
+              "rule_identifier": "bsl-1.0_1.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsl-1.0_1.RULE"
+            }
+          ],
+          "identifier": "bsl_1_0-9a283deb-f3f0-278e-018c-5f86c292b5d0"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.31,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2017 The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/pkg__sql__exec_util__8b614283.go",
+      "type": "file",
+      "name": "pkg__sql__exec_util__8b614283.go",
+      "base_name": "pkg__sql__exec_util__8b614283",
+      "extension": ".go",
+      "size": 166549,
+      "date": "2026-07-01",
+      "sha1": "3950146435d07e70cbbcba48aedb15733901001c",
+      "md5": "4a994188b58880efb1356400fdf8ef56",
+      "sha256": "3b12b83c770d69a82677f79dcf92a122339f6130795f36726e4becfc8281f53c",
+      "sha1_git": "5585e7c029d637285cbbd62a31aa682e21fbe0a5",
+      "mime_type": "text/plain",
+      "file_type": "UTF-8 Unicode text, with very long lines",
+      "programming_language": "Go",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "bsl-1.0",
+      "detected_license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+      "license_detections": [
+        {
+          "license_expression": "bsl-1.0",
+          "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+          "matches": [
+            {
+              "license_expression": "bsl-1.0",
+              "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+              "from_file": "before/pkg__sql__exec_util__8b614283.go",
+              "start_line": 3,
+              "end_line": 4,
+              "matcher": "3-seq",
+              "score": 23.64,
+              "matched_length": 13,
+              "match_coverage": 23.64,
+              "rule_relevance": 100,
+              "rule_identifier": "bsl-1.0_1.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsl-1.0_1.RULE"
+            }
+          ],
+          "identifier": "bsl_1_0-9a283deb-f3f0-278e-018c-5f86c292b5d0"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.07,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2015 The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/pkg__sql__stats__automatic_stats__04a025e9.go",
+      "type": "file",
+      "name": "pkg__sql__stats__automatic_stats__04a025e9.go",
+      "base_name": "pkg__sql__stats__automatic_stats__04a025e9",
+      "extension": ".go",
+      "size": 42742,
+      "date": "2026-07-01",
+      "sha1": "5e6d8a26b3ac5d73cf2989896fd692b8501855a8",
+      "md5": "dfd540c60fce69b1e10182bdc02e8901",
+      "sha256": "7654bbde29b3e43ec059f0620abf7aa67fa120eb7436082f979b5edaa0495bbd",
+      "sha1_git": "e7e3ee5d3aa13fc651995e90ce33c377b3ec2820",
+      "mime_type": "text/plain",
+      "file_type": "UTF-8 Unicode text",
+      "programming_language": "Go",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "unknown-license-reference",
+      "detected_license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+      "license_detections": [
+        {
+          "license_expression": "unknown-license-reference",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+          "matches": [
+            {
+              "license_expression": "unknown-license-reference",
+              "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+              "from_file": "before/pkg__sql__stats__automatic_stats__04a025e9.go",
+              "start_line": 3,
+              "end_line": 3,
+              "matcher": "3-seq",
+              "score": 53.33,
+              "matched_length": 8,
+              "match_coverage": 53.33,
+              "rule_relevance": 100,
+              "rule_identifier": "license-intro_11.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/license-intro_11.RULE"
+            }
+          ],
+          "identifier": "unknown_license_reference-ce2862d2-7e42-c597-f92a-9c6116fc964f"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.16,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2018 The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/pkg__sql__stats__automatic_stats_test__596ce9ec.go",
+      "type": "file",
+      "name": "pkg__sql__stats__automatic_stats_test__596ce9ec.go",
+      "base_name": "pkg__sql__stats__automatic_stats_test__596ce9ec",
+      "extension": ".go",
+      "size": 34452,
+      "date": "2026-07-01",
+      "sha1": "98af7c22993486a20a63de4c68f2bc515e128157",
+      "md5": "49c5cc9f947cac080398a253139cf0dc",
+      "sha256": "ac8e6bc7cb9c066681489726aca08bd6e4363fbd41839711089ea5182e3d6892",
+      "sha1_git": "b3361e635b9e14402566c9c227372f6a98381da6",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "Go",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "bsl-1.0",
+      "detected_license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+      "license_detections": [
+        {
+          "license_expression": "bsl-1.0",
+          "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+          "matches": [
+            {
+              "license_expression": "bsl-1.0",
+              "license_expression_spdx": "LicenseRef-scancode-bsl-1.0",
+              "from_file": "before/pkg__sql__stats__automatic_stats_test__596ce9ec.go",
+              "start_line": 3,
+              "end_line": 4,
+              "matcher": "3-seq",
+              "score": 23.64,
+              "matched_length": 13,
+              "match_coverage": 23.64,
+              "rule_relevance": 100,
+              "rule_identifier": "bsl-1.0_1.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/bsl-1.0_1.RULE"
+            }
+          ],
+          "identifier": "bsl_1_0-9a283deb-f3f0-278e-018c-5f86c292b5d0"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.32,
+      "copyrights": [
+        {
+          "copyright": "Copyright 2018 The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "The Cockroach Authors",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

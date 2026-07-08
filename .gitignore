@@ -1,0 +1,61 @@
+# ==========================================================
+# .gitignore — progetto analisi-etica-codice-ai
+# ==========================================================
+
+# --- Ambiente virtuale Python (ricreabile con requirements.txt) ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Cache e file compilati Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Eseguibili di tool esterni (documentare l'installazione nel README) ---
+# Gitleaks va installato a parte, non versionato nel repo.
+gitleaks.exe
+gitleaks
+*.exe
+
+# --- File scaricati / dati intermedi pesanti ---
+# I file sorgente scaricati da GitHub sono ricreabili con lo script 02_fetch_files.
+# Sono molti e pesanti: meglio non versionarli.
+data/files/
+data/licenses/
+data/patches/
+
+# --- Cache del dataset HuggingFace (se scaricata localmente) ---
+*.parquet.cache
+.cache/
+
+# --- Segreti e chiavi API ---
+# Non versionare MAI chiavi o token. Le API key vanno passate via variabile
+# d'ambiente (es. LLM_JUDGE_API_KEY), non scritte in file nel repo.
+.env
+*.key
+secrets.*
+*_secret*
+
+# --- File temporanei e di sistema ---
+*.tmp
+*.bak
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE ---
+# La cartella .idea di IntelliJ contiene configurazioni locali della macchina.
+.idea/
+.vscode/
+*.iml
+
+# --- Backup locali (non vanno nel repo pubblico) ---
+backup_*.zip
+*_backup*.zip
+backup_results*/

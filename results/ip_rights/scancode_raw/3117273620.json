@@ -1,0 +1,267 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3117273620\\after"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3117273620.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T152657.336474",
+      "end_timestamp": "2026-07-01T152702.611595",
+      "output_format_version": "4.1.0",
+      "duration": 5.275137662887573,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 3
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "mit-70c99094-5482-8374-7f01-91df318346a5",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT",
+      "detection_count": 2,
+      "reference_matches": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "from_file": "after/pyslang__examples__extract_logic_names__46307770.py",
+          "start_line": 2,
+          "end_line": 2,
+          "matcher": "1-spdx-id",
+          "score": 100.0,
+          "matched_length": 4,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "spdx-license-identifier-mit-2410ec7d8cecfb84d911cb1c29ba44ab907b8b8f",
+          "rule_url": null
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "after",
+      "type": "directory",
+      "name": "after",
+      "base_name": "after",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 3,
+      "dirs_count": 0,
+      "size_count": 16627,
+      "scan_errors": []
+    },
+    {
+      "path": "after/pyslang__examples__extract_logic_names__46307770.py",
+      "type": "file",
+      "name": "pyslang__examples__extract_logic_names__46307770.py",
+      "base_name": "pyslang__examples__extract_logic_names__46307770",
+      "extension": ".py",
+      "size": 9181,
+      "date": "2026-07-01",
+      "sha1": "d3ef745afdab693c48c7227dd1d6e8b37bbc81ca",
+      "md5": "ca6280b2f929e2960c4b302b39ebd930",
+      "sha256": "5b9b998450fb306c58f9d617cbed0b38a03cba8203fcf5a3ddbf6beeff35f34c",
+      "sha1_git": "91d9edf0d90b3838bf2ae98793a26dff91359b41",
+      "mime_type": "text/x-ruby",
+      "file_type": "Ruby script, ASCII text",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/pyslang__examples__extract_logic_names__46307770.py",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "1-spdx-id",
+              "score": 100.0,
+              "matched_length": 4,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "spdx-license-identifier-mit-f5be3fda2f20a26515ed3dabedb3804346819bf7",
+              "rule_url": null
+            }
+          ],
+          "identifier": "mit-70c99094-5482-8374-7f01-91df318346a5"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.39,
+      "copyrights": [
+        {
+          "copyright": "Copyright Michael Popoloski",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Michael Popoloski",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/pyslang__examples__README__31127b36.md",
+      "type": "file",
+      "name": "pyslang__examples__README__31127b36.md",
+      "base_name": "pyslang__examples__README__31127b36",
+      "extension": ".md",
+      "size": 884,
+      "date": "2026-07-01",
+      "sha1": "360c73341ebe5a8271ead88fda05724a403de0f0",
+      "md5": "71bfd3ff755e936f207bb5329c7e9a3d",
+      "sha256": "977de707ae553f7de992b470f0192567e28b6f1d3ee68f0d7da7121ac62a43c2",
+      "sha1_git": "73844987d91598f859e609d771781b5630ff0295",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/pyslang__tests__test_extract_logic_names__d0440413.py",
+      "type": "file",
+      "name": "pyslang__tests__test_extract_logic_names__d0440413.py",
+      "base_name": "pyslang__tests__test_extract_logic_names__d0440413",
+      "extension": ".py",
+      "size": 6562,
+      "date": "2026-07-01",
+      "sha1": "b67a35c9e7dfaecdafed6f32028b0a6b791691e1",
+      "md5": "6be38536dc9ad8717a5bedac1910b3cf",
+      "sha256": "4c48094d39ac4bda0b5c91259dc3d405d244fa394979be1d796ea82cbd2eb213",
+      "sha1_git": "8f6b0131a299571dfa4caa32895f6a69f02c1731",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/pyslang__tests__test_extract_logic_names__d0440413.py",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "1-spdx-id",
+              "score": 100.0,
+              "matched_length": 4,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "spdx-license-identifier-mit-f5be3fda2f20a26515ed3dabedb3804346819bf7",
+              "rule_url": null
+            }
+          ],
+          "identifier": "mit-70c99094-5482-8374-7f01-91df318346a5"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.54,
+      "copyrights": [
+        {
+          "copyright": "Copyright Michael Popoloski",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Michael Popoloski",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

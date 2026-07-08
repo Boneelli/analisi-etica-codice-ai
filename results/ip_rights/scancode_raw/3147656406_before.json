@@ -1,0 +1,153 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3147656406\\before"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3147656406_before.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T173135.723524",
+      "end_timestamp": "2026-07-01T173140.562976",
+      "output_format_version": "4.1.0",
+      "duration": 4.839466571807861,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 1
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "apache_2_0-f590f40b-411c-1850-b68c-588af90e1dea",
+      "license_expression": "apache-2.0",
+      "license_expression_spdx": "Apache-2.0",
+      "detection_count": 1,
+      "reference_matches": [
+        {
+          "license_expression": "apache-2.0",
+          "license_expression_spdx": "Apache-2.0",
+          "from_file": "before/alpha_factory_v1__demos__self_healing_repo__agent_selfheal_entrypoint__5caae409.py",
+          "start_line": 1,
+          "end_line": 1,
+          "matcher": "1-spdx-id",
+          "score": 100.0,
+          "matched_length": 6,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "spdx-license-identifier-apache_2_0-d904d6f07f8d33445270a849a3be98d8904d568a",
+          "rule_url": null
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "before",
+      "type": "directory",
+      "name": "before",
+      "base_name": "before",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 1,
+      "dirs_count": 0,
+      "size_count": 4383,
+      "scan_errors": []
+    },
+    {
+      "path": "before/alpha_factory_v1__demos__self_healing_repo__agent_selfheal_entrypoint__5caae409.py",
+      "type": "file",
+      "name": "alpha_factory_v1__demos__self_healing_repo__agent_selfheal_entrypoint__5caae409.py",
+      "base_name": "alpha_factory_v1__demos__self_healing_repo__agent_selfheal_entrypoint__5caae409",
+      "extension": ".py",
+      "size": 4383,
+      "date": "2026-07-01",
+      "sha1": "11af26c018d9a353c9387b14eea4f238cf644827",
+      "md5": "dca3fc4ac3d39ba71b84b3f2f009770f",
+      "sha256": "ab7c03c43c8ba1408b733efabd92536a0100ca0cbadd3eb17e51226d43a497ea",
+      "sha1_git": "0ad361ae16dce0533a971abb4e71b3871e40bd9e",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, UTF-8 Unicode text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "detected_license_expression": "apache-2.0",
+      "detected_license_expression_spdx": "Apache-2.0",
+      "license_detections": [
+        {
+          "license_expression": "apache-2.0",
+          "license_expression_spdx": "Apache-2.0",
+          "matches": [
+            {
+              "license_expression": "apache-2.0",
+              "license_expression_spdx": "Apache-2.0",
+              "from_file": "before/alpha_factory_v1__demos__self_healing_repo__agent_selfheal_entrypoint__5caae409.py",
+              "start_line": 1,
+              "end_line": 1,
+              "matcher": "1-spdx-id",
+              "score": 100.0,
+              "matched_length": 6,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "spdx-license-identifier-apache_2_0-5dcda840588b4f07f49f2c0100924ebca7bc0649",
+              "rule_url": null
+            }
+          ],
+          "identifier": "apache_2_0-f590f40b-411c-1850-b68c-588af90e1dea"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 1.16,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

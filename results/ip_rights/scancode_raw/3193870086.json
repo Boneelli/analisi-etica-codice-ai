@@ -1,0 +1,212 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3193870086\\after"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3193870086.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T153426.408729",
+      "end_timestamp": "2026-07-01T153434.255182",
+      "output_format_version": "4.1.0",
+      "duration": 7.846468448638916,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 3
+      }
+    }
+  ],
+  "license_detections": [],
+  "files": [
+    {
+      "path": "after",
+      "type": "directory",
+      "name": "after",
+      "base_name": "after",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 3,
+      "dirs_count": 0,
+      "size_count": 160320,
+      "scan_errors": []
+    },
+    {
+      "path": "after/src__ast__datatype_decl_plugin__7e533890.h",
+      "type": "file",
+      "name": "src__ast__datatype_decl_plugin__7e533890.h",
+      "base_name": "src__ast__datatype_decl_plugin__7e533890",
+      "extension": ".h",
+      "size": 21004,
+      "date": "2026-07-01",
+      "sha1": "dfff146ab6c9a8a6a84c1301f6b57b9ae4a2a983",
+      "md5": "fb20b17800c6a8298172e85dc3e88523",
+      "sha256": "18bf8b5afb6fcd0c8812248d2a938184e0ee02629d19d4f7721e5100df5ca66b",
+      "sha1_git": "7876f10c66d5e75e7ba884efd639b909f7c9b431",
+      "mime_type": "text/x-c++",
+      "file_type": "C++ source, ASCII text",
+      "programming_language": "C",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) 2017 Microsoft Corporation",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/src__ast__datatype_decl_plugin__f62f085f.cpp",
+      "type": "file",
+      "name": "src__ast__datatype_decl_plugin__f62f085f.cpp",
+      "base_name": "src__ast__datatype_decl_plugin__f62f085f",
+      "extension": ".cpp",
+      "size": 59487,
+      "date": "2026-07-01",
+      "sha1": "21aa6b812d3e98ec347b08d4066152796c5e2281",
+      "md5": "98841aea63a4196b31437f71c8f0c253",
+      "sha256": "8adf9ab503500143ec036b98fbaf12af6cbfcdf79ae89be34274feebec32463b",
+      "sha1_git": "3daceb88c2dc2ca849a89f8177481d2245d46d9d",
+      "mime_type": "text/x-c++",
+      "file_type": "C++ source, ASCII text",
+      "programming_language": "C++",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) 2017 Microsoft Corporation",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/src__cmd_context__cmd_context__c67bad13.cpp",
+      "type": "file",
+      "name": "src__cmd_context__cmd_context__c67bad13.cpp",
+      "base_name": "src__cmd_context__cmd_context__c67bad13",
+      "extension": ".cpp",
+      "size": 79829,
+      "date": "2026-07-01",
+      "sha1": "10f51c742e16d9e77188f2d23f55363288c26d1c",
+      "md5": "f67f0fdb5a0623cbb7d6f0949b8d10e5",
+      "sha256": "93052b171e5407c82785c2a72fb32c2f1299b40e9b3c0a9f6b5b8395285a892a",
+      "sha1_git": "4f093e74976833079aacd137d587002a176a906f",
+      "mime_type": "text/x-c",
+      "file_type": "C source, ASCII text",
+      "programming_language": "C++",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) 2011 Microsoft Corporation",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

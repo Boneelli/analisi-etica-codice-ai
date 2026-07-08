@@ -1,0 +1,209 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3183425949\\before"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3183425949_before.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T164846.788215",
+      "end_timestamp": "2026-07-01T164852.592253",
+      "output_format_version": "4.1.0",
+      "duration": 5.80405330657959,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 2
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "mit-b5f3224c-78f3-8adc-5f8d-7f1a7c27d321",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT",
+      "detection_count": 2,
+      "reference_matches": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "from_file": "before/packages__agentmark-core__README__7fb9c0c3.md",
+          "start_line": 226,
+          "end_line": 228,
+          "matcher": "3-seq",
+          "score": 64.71,
+          "matched_length": 11,
+          "match_coverage": 64.71,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_1478.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_1478.RULE"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "before",
+      "type": "directory",
+      "name": "before",
+      "base_name": "before",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 2,
+      "dirs_count": 0,
+      "size_count": 13256,
+      "scan_errors": []
+    },
+    {
+      "path": "before/packages__agentmark-core__README__7fb9c0c3.md",
+      "type": "file",
+      "name": "packages__agentmark-core__README__7fb9c0c3.md",
+      "base_name": "packages__agentmark-core__README__7fb9c0c3",
+      "extension": ".md",
+      "size": 6628,
+      "date": "2026-07-01",
+      "sha1": "273410a9a25037e96635be4f179a62fe788a1c35",
+      "md5": "9da1833ddd2f582ad97bbdf7664585a1",
+      "sha256": "aeb3f097e0fa808f0e07979b4403776f44ecf60dca57a3b44b22f536bebc48cc",
+      "sha1_git": "4d7c2ecc629dfe67f76f97148944e0ada9109ce7",
+      "mime_type": "text/html",
+      "file_type": "HTML document, UTF-8 Unicode text, with very long lines",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "before/packages__agentmark-core__README__7fb9c0c3.md",
+              "start_line": 226,
+              "end_line": 228,
+              "matcher": "3-seq",
+              "score": 64.71,
+              "matched_length": 11,
+              "match_coverage": 64.71,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_1478.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_1478.RULE"
+            }
+          ],
+          "identifier": "mit-b5f3224c-78f3-8adc-5f8d-7f1a7c27d321"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 1.3,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/README__8ec9a00b.md",
+      "type": "file",
+      "name": "README__8ec9a00b.md",
+      "base_name": "README__8ec9a00b",
+      "extension": ".md",
+      "size": 6628,
+      "date": "2026-07-01",
+      "sha1": "273410a9a25037e96635be4f179a62fe788a1c35",
+      "md5": "9da1833ddd2f582ad97bbdf7664585a1",
+      "sha256": "aeb3f097e0fa808f0e07979b4403776f44ecf60dca57a3b44b22f536bebc48cc",
+      "sha1_git": "4d7c2ecc629dfe67f76f97148944e0ada9109ce7",
+      "mime_type": "text/html",
+      "file_type": "HTML document, UTF-8 Unicode text, with very long lines",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "before/README__8ec9a00b.md",
+              "start_line": 226,
+              "end_line": 228,
+              "matcher": "3-seq",
+              "score": 64.71,
+              "matched_length": 11,
+              "match_coverage": 64.71,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_1478.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_1478.RULE"
+            }
+          ],
+          "identifier": "mit-b5f3224c-78f3-8adc-5f8d-7f1a7c27d321"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 1.3,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

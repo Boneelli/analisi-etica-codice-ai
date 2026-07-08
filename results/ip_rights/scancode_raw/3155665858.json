@@ -1,0 +1,539 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3155665858\\after"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3155665858.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T151542.261894",
+      "end_timestamp": "2026-07-01T151559.686750",
+      "output_format_version": "4.1.0",
+      "duration": 17.42487072944641,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 9
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT",
+      "detection_count": 4,
+      "reference_matches": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "from_file": "after/sdk__identity__identity__src__credentials__clientCertificateCredential__7536c317.ts",
+          "start_line": 2,
+          "end_line": 2,
+          "matcher": "2-aho",
+          "score": 100.0,
+          "matched_length": 5,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_12.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "after",
+      "type": "directory",
+      "name": "after",
+      "base_name": "after",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 9,
+      "dirs_count": 0,
+      "size_count": 547858,
+      "scan_errors": []
+    },
+    {
+      "path": "after/documentation__using-azure-identity__247dca06.md",
+      "type": "file",
+      "name": "documentation__using-azure-identity__247dca06.md",
+      "base_name": "documentation__using-azure-identity__247dca06",
+      "extension": ".md",
+      "size": 16413,
+      "date": "2026-07-01",
+      "sha1": "fcbf247638fa7a0af08b5b873efac424b4c62f93",
+      "md5": "69120737a94ad9d5911d860ade6d1206",
+      "sha256": "f09c6009a65c95c1baad4300e8fc96f35e146b2ca0de324568d86c88fe57f36e",
+      "sha1_git": "e83912248228e03b17ec2f28d33c0762f05f8a5c",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/sdk__identity__identity__src__credentials__clientCertificateCredential__7536c317.ts",
+      "type": "file",
+      "name": "sdk__identity__identity__src__credentials__clientCertificateCredential__7536c317.ts",
+      "base_name": "sdk__identity__identity__src__credentials__clientCertificateCredential__7536c317",
+      "extension": ".ts",
+      "size": 9680,
+      "date": "2026-07-01",
+      "sha1": "41d7242fc5d3d539e7021652b41f12e55f37c48c",
+      "md5": "be57701a21a56750f724187366364297",
+      "sha256": "9c356f74c91c144a8fd51bd43e900e8c2a216c2e3c766d982951dd4297935523",
+      "sha1_git": "5cdf7e98f4cd18cfb8c20ef4a8de8c224abbe637",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "TypeScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/sdk__identity__identity__src__credentials__clientCertificateCredential__7536c317.ts",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_12.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+            }
+          ],
+          "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.56,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/sdk__identity__identity__src__credentials__clientCertificateCredentialModels__caecd463.ts",
+      "type": "file",
+      "name": "sdk__identity__identity__src__credentials__clientCertificateCredentialModels__caecd463.ts",
+      "base_name": "sdk__identity__identity__src__credentials__clientCertificateCredentialModels__caecd463",
+      "extension": ".ts",
+      "size": 1251,
+      "date": "2026-07-01",
+      "sha1": "f049cf2e1bfc251c85f0070be51ac88f79ca21f1",
+      "md5": "dd28db839b2d26a18f4df3f716169bfa",
+      "sha256": "95fd0d5af080f2112151dda05bf11bf5cd36b611c62623b7c32e21526e8bbccb",
+      "sha1_git": "81ff002276390be429a510ef464b33dd8b9fa1c6",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "TypeScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/sdk__identity__identity__src__credentials__clientCertificateCredentialModels__caecd463.ts",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_12.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+            }
+          ],
+          "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 3.97,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/sdk__identity__identity__src__credentials__onBehalfOfCredential__f7a6f1d5.ts",
+      "type": "file",
+      "name": "sdk__identity__identity__src__credentials__onBehalfOfCredential__f7a6f1d5.ts",
+      "base_name": "sdk__identity__identity__src__credentials__onBehalfOfCredential__f7a6f1d5",
+      "extension": ".ts",
+      "size": 11037,
+      "date": "2026-07-01",
+      "sha1": "f8f3fb5dbf4ac24c5867bec2f7423705abbf11b4",
+      "md5": "3e8542bf09d9ac88f84cdcd3c4e8d600",
+      "sha256": "14b05b239ae0cb10a599d5213a1cbe7963774215928cd0bea9d5400288599cf7",
+      "sha1_git": "da207eaf9fd840583bfaef4bf0eee7abcd9bb184",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "TypeScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/sdk__identity__identity__src__credentials__onBehalfOfCredential__f7a6f1d5.ts",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_12.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+            }
+          ],
+          "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.52,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/sdk__identity__identity__test__internal__node__clientCertificateCredential.spec__26b51e88.ts",
+      "type": "file",
+      "name": "sdk__identity__identity__test__internal__node__clientCertificateCredential.spec__26b51e88.ts",
+      "base_name": "sdk__identity__identity__test__internal__node__clientCertificateCredential.spec__26b51e88",
+      "extension": ".ts",
+      "size": 5452,
+      "date": "2026-07-01",
+      "sha1": "79e493eabc714fd862a7f651317cf027f74af7ff",
+      "md5": "36a4f3fcd36e113e71e52dba20ebc732",
+      "sha256": "0f98e3a6f038d4da6d6be447c610f867aa986812894b06e7d2c1e73169867470",
+      "sha1_git": "f20f53ba15e9c582e2a29be64a17a6eb297d0a3a",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "TypeScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "after/sdk__identity__identity__test__internal__node__clientCertificateCredential.spec__26b51e88.ts",
+              "start_line": 2,
+              "end_line": 2,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_12.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_12.RULE"
+            }
+          ],
+          "identifier": "mit-e634e936-0701-7555-bfaa-1fce0c174838"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.89,
+      "copyrights": [
+        {
+          "copyright": "Copyright (c) Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Microsoft Corporation",
+          "start_line": 1,
+          "end_line": 1
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/sdk__identity__identity__TROUBLESHOOTING__c8415356.md",
+      "type": "file",
+      "name": "sdk__identity__identity__TROUBLESHOOTING__c8415356.md",
+      "base_name": "sdk__identity__identity__TROUBLESHOOTING__c8415356",
+      "extension": ".md",
+      "size": 72179,
+      "date": "2026-07-01",
+      "sha1": "f4f0dbeae930d8f3ffe25ff10f819cb97c91f32d",
+      "md5": "5f28249ebdac7e610b91d2a0fbdb33df",
+      "sha256": "5310e6a28c4b9a6c3f9b2746ecd92b1296cb29be9a16cff75eef1d5455f1e6e1",
+      "sha1_git": "249457c22e295a4b526bfb852ec08bad409defe9",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, UTF-8 Unicode text, with very long lines",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/sdk__web-pubsub__web-pubsub-client-protobuf__src__generated__clientProto.d__854072ec.ts",
+      "type": "file",
+      "name": "sdk__web-pubsub__web-pubsub-client-protobuf__src__generated__clientProto.d__854072ec.ts",
+      "base_name": "sdk__web-pubsub__web-pubsub-client-protobuf__src__generated__clientProto.d__854072ec",
+      "extension": ".ts",
+      "size": 68129,
+      "date": "2026-07-01",
+      "sha1": "e3a8eb66427d3a4e4f26d8ddb91052661c2af233",
+      "md5": "ce8fd7cc6e01680fe37fc397f2d345de",
+      "sha256": "aa3bba5c17064fb6a74f443684dce782aa54ea6ae2f2ade2dc0fd69f80f9d7b7",
+      "sha1_git": "09cd01c3d726a3291b4a08492c1d19b9b4bd75f2",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "TypeScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/sdk__web-pubsub__web-pubsub-client-protobuf__src__generated__clientProto__8621df2a.js",
+      "type": "file",
+      "name": "sdk__web-pubsub__web-pubsub-client-protobuf__src__generated__clientProto__8621df2a.js",
+      "base_name": "sdk__web-pubsub__web-pubsub-client-protobuf__src__generated__clientProto__8621df2a",
+      "extension": ".js",
+      "size": 181905,
+      "date": "2026-07-01",
+      "sha1": "d068c234c5c7da1db7583a34aa69f724b07ee8b0",
+      "md5": "cf4d6bcf5fc703b016ed0db2ae1c3378",
+      "sha256": "d4f9895a23fff56a5c3fddde26a028317738b180d79b428eb949698cef643154",
+      "sha1_git": "12d31ca46ad6a38f956cd9afd8e23de07d3c1d66",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "JavaScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "after/sdk__web-pubsub__web-pubsub-client-protobuf__src__generated__clientProto__e161ddb2.cjs",
+      "type": "file",
+      "name": "sdk__web-pubsub__web-pubsub-client-protobuf__src__generated__clientProto__e161ddb2.cjs",
+      "base_name": "sdk__web-pubsub__web-pubsub-client-protobuf__src__generated__clientProto__e161ddb2",
+      "extension": ".cjs",
+      "size": 181812,
+      "date": "2026-07-01",
+      "sha1": "7da8f98c6ed92663d5c3750b323df9333dbe49c3",
+      "md5": "028c4fd8e86a0d61039a01824e80a711",
+      "sha256": "13467e77f57eed73123f3c6a4a89cbce6ef3ba6fe5a6fa38cc0589c5d96d4dbe",
+      "sha1_git": "9a7d9b71b13c486508f04f507a40e72afe89f591",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

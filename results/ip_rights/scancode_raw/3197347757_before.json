@@ -1,0 +1,215 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3197347757\\before"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3197347757_before.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T173837.871949",
+      "end_timestamp": "2026-07-01T173842.874377",
+      "output_format_version": "4.1.0",
+      "duration": 5.002441883087158,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 2
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "apache_2_0_and_unknown_license_reference-d3e3e2a5-a0fa-75da-b7c6-8dbbdfd44f6f",
+      "license_expression": "apache-2.0 AND unknown-license-reference",
+      "license_expression_spdx": "Apache-2.0 AND LicenseRef-scancode-unknown-license-reference",
+      "detection_count": 1,
+      "reference_matches": [
+        {
+          "license_expression": "apache-2.0",
+          "license_expression_spdx": "Apache-2.0",
+          "from_file": "before/pyproject__5d07e7d7.toml",
+          "start_line": 9,
+          "end_line": 10,
+          "matcher": "2-aho",
+          "score": 100.0,
+          "matched_length": 5,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "apache-2.0_1214.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_1214.RULE"
+        },
+        {
+          "license_expression": "unknown-license-reference",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+          "from_file": "before/pyproject__5d07e7d7.toml",
+          "start_line": 10,
+          "end_line": 10,
+          "matcher": "2-aho",
+          "score": 100.0,
+          "matched_length": 3,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "unknown-license-reference_386.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_386.RULE"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "before",
+      "type": "directory",
+      "name": "before",
+      "base_name": "before",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 2,
+      "dirs_count": 0,
+      "size_count": 4932,
+      "scan_errors": []
+    },
+    {
+      "path": "before/pyproject__5d07e7d7.toml",
+      "type": "file",
+      "name": "pyproject__5d07e7d7.toml",
+      "base_name": "pyproject__5d07e7d7",
+      "extension": ".toml",
+      "size": 4426,
+      "date": "2026-07-01",
+      "sha1": "bd3c917e583b778f82ab5437cb5788dadaa34cd3",
+      "md5": "26e102582dae76df7c1344f4a1f1840e",
+      "sha256": "cbdb91c29f1870775f448ae215f776eaafb3f62b076afba313450be944bdd6b5",
+      "sha1_git": "9a2c9746b6dd46a1ead17d2265b8e6b1df7b81a0",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": "apache-2.0 AND unknown-license-reference",
+      "detected_license_expression_spdx": "Apache-2.0 AND LicenseRef-scancode-unknown-license-reference",
+      "license_detections": [
+        {
+          "license_expression": "apache-2.0 AND unknown-license-reference",
+          "license_expression_spdx": "Apache-2.0 AND LicenseRef-scancode-unknown-license-reference",
+          "matches": [
+            {
+              "license_expression": "apache-2.0",
+              "license_expression_spdx": "Apache-2.0",
+              "from_file": "before/pyproject__5d07e7d7.toml",
+              "start_line": 9,
+              "end_line": 10,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "apache-2.0_1214.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/apache-2.0_1214.RULE"
+            },
+            {
+              "license_expression": "unknown-license-reference",
+              "license_expression_spdx": "LicenseRef-scancode-unknown-license-reference",
+              "from_file": "before/pyproject__5d07e7d7.toml",
+              "start_line": 10,
+              "end_line": 10,
+              "matcher": "2-aho",
+              "score": 100.0,
+              "matched_length": 3,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "unknown-license-reference_386.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/unknown-license-reference_386.RULE"
+            }
+          ],
+          "identifier": "apache_2_0_and_unknown_license_reference-d3e3e2a5-a0fa-75da-b7c6-8dbbdfd44f6f"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 1.34,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/requirements-dev__f4fb6916.txt",
+      "type": "file",
+      "name": "requirements-dev__f4fb6916.txt",
+      "base_name": "requirements-dev__f4fb6916",
+      "extension": ".txt",
+      "size": 506,
+      "date": "2026-07-01",
+      "sha1": "78d310a88a5996fc30f4e459e0ce541d2d2587b5",
+      "md5": "c932f0c1833b9b047e97697ace0536b3",
+      "sha256": "e3416512145fec33fa2dfcb9d388002465cae1d90c8ab82491dba81ab7ac10dc",
+      "sha1_git": "21ca6487b867e40a4e61c8e0c0cbf8a8b6703184",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3057714463\\before"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3057714463_before.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T170455.191440",
+      "end_timestamp": "2026-07-01T170501.663756",
+      "output_format_version": "4.1.0",
+      "duration": 6.472333669662476,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 4
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "unknown_spdx_or_unknown_spdx-845f0495-b911-ad62-5a3b-fa855a7ff7c3",
+      "license_expression": "unknown-spdx OR unknown-spdx",
+      "license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+      "detection_count": 4,
+      "reference_matches": [
+        {
+          "license_expression": "unknown-spdx OR unknown-spdx",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+          "from_file": "before/target_chains__ethereum__contracts__contracts__pulse__Scheduler__74703515.sol",
+          "start_line": 1,
+          "end_line": 1,
+          "matcher": "1-spdx-id",
+          "score": 100.0,
+          "matched_length": 5,
+          "match_coverage": 100.0,
+          "rule_relevance": 100,
+          "rule_identifier": "spdx-license-identifier-unknown_spdx_or_unknown_spdx-ce911ca6c1f754c86634ef22edea504dee7a4b8c",
+          "rule_url": null
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "before",
+      "type": "directory",
+      "name": "before",
+      "base_name": "before",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 4,
+      "dirs_count": 0,
+      "size_count": 115106,
+      "scan_errors": []
+    },
+    {
+      "path": "before/target_chains__ethereum__contracts__contracts__pulse__Scheduler__74703515.sol",
+      "type": "file",
+      "name": "target_chains__ethereum__contracts__contracts__pulse__Scheduler__74703515.sol",
+      "base_name": "target_chains__ethereum__contracts__contracts__pulse__Scheduler__74703515",
+      "extension": ".sol",
+      "size": 28358,
+      "date": "2026-07-01",
+      "sha1": "fd05f00d02b43f8f6734d6165489d9ec9211a0e6",
+      "md5": "cd10ebf1f4d5ca11590f715530c69ad5",
+      "sha256": "cf6523ad743ae8e6692bf8300eba017f356d5278e7f99bc0318b5df2b3698e9a",
+      "sha1_git": "9b5a8e0533af3c9b68e20adfd156f56d05744619",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, UTF-8 Unicode text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": "unknown-spdx OR unknown-spdx",
+      "detected_license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+      "license_detections": [
+        {
+          "license_expression": "unknown-spdx OR unknown-spdx",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+          "matches": [
+            {
+              "license_expression": "unknown-spdx OR unknown-spdx",
+              "license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+              "from_file": "before/target_chains__ethereum__contracts__contracts__pulse__Scheduler__74703515.sol",
+              "start_line": 1,
+              "end_line": 1,
+              "matcher": "1-spdx-id",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "spdx-license-identifier-unknown_spdx_or_unknown_spdx-fda518f5fb1f46ab7dc6a805107e57092ffa4818",
+              "rule_url": null
+            }
+          ],
+          "identifier": "unknown_spdx_or_unknown_spdx-845f0495-b911-ad62-5a3b-fa855a7ff7c3"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.21,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/target_chains__ethereum__contracts__contracts__pulse__SchedulerErrors__508d8d5c.sol",
+      "type": "file",
+      "name": "target_chains__ethereum__contracts__contracts__pulse__SchedulerErrors__508d8d5c.sol",
+      "base_name": "target_chains__ethereum__contracts__contracts__pulse__SchedulerErrors__508d8d5c",
+      "extension": ".sol",
+      "size": 1062,
+      "date": "2026-07-01",
+      "sha1": "007ee670f3af5fb19fc4d1cca49d347c2431481f",
+      "md5": "354390230056cf857916129c4c8b6682",
+      "sha256": "0e3badc301e256c495e07015e58c14e4496d4a77777b748e760db84f5c28082f",
+      "sha1_git": "0aaf0d0d6c097a208e373d88d99899cc727226e8",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": "unknown-spdx OR unknown-spdx",
+      "detected_license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+      "license_detections": [
+        {
+          "license_expression": "unknown-spdx OR unknown-spdx",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+          "matches": [
+            {
+              "license_expression": "unknown-spdx OR unknown-spdx",
+              "license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+              "from_file": "before/target_chains__ethereum__contracts__contracts__pulse__SchedulerErrors__508d8d5c.sol",
+              "start_line": 1,
+              "end_line": 1,
+              "matcher": "1-spdx-id",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "spdx-license-identifier-unknown_spdx_or_unknown_spdx-fda518f5fb1f46ab7dc6a805107e57092ffa4818",
+              "rule_url": null
+            }
+          ],
+          "identifier": "unknown_spdx_or_unknown_spdx-845f0495-b911-ad62-5a3b-fa855a7ff7c3"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 5.62,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/target_chains__ethereum__contracts__contracts__pulse__SchedulerState__5da54591.sol",
+      "type": "file",
+      "name": "target_chains__ethereum__contracts__contracts__pulse__SchedulerState__5da54591.sol",
+      "base_name": "target_chains__ethereum__contracts__contracts__pulse__SchedulerState__5da54591",
+      "extension": ".sol",
+      "size": 4393,
+      "date": "2026-07-01",
+      "sha1": "15744bea29aa6fb5af34597a19b43e4588901c88",
+      "md5": "779d405581cccd0c6593994e1a745fc3",
+      "sha256": "014001d987a6305b5f5ee5f69912475dbc20f747292139dc9d56713fda3a96bb",
+      "sha1_git": "f4557cf2973aac49ab44fd01c92d7efafcb6030f",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": "unknown-spdx OR unknown-spdx",
+      "detected_license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+      "license_detections": [
+        {
+          "license_expression": "unknown-spdx OR unknown-spdx",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+          "matches": [
+            {
+              "license_expression": "unknown-spdx OR unknown-spdx",
+              "license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+              "from_file": "before/target_chains__ethereum__contracts__contracts__pulse__SchedulerState__5da54591.sol",
+              "start_line": 1,
+              "end_line": 1,
+              "matcher": "1-spdx-id",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "spdx-license-identifier-unknown_spdx_or_unknown_spdx-fda518f5fb1f46ab7dc6a805107e57092ffa4818",
+              "rule_url": null
+            }
+          ],
+          "identifier": "unknown_spdx_or_unknown_spdx-845f0495-b911-ad62-5a3b-fa855a7ff7c3"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 1.05,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/target_chains__ethereum__contracts__forge-test__PulseScheduler.t__b7d4667b.sol",
+      "type": "file",
+      "name": "target_chains__ethereum__contracts__forge-test__PulseScheduler.t__b7d4667b.sol",
+      "base_name": "target_chains__ethereum__contracts__forge-test__PulseScheduler.t__b7d4667b",
+      "extension": ".sol",
+      "size": 81293,
+      "date": "2026-07-01",
+      "sha1": "898adf09505d9e6843b57f1a45a651dfb1b86f19",
+      "md5": "6de5a354210cfb9e3c2368a750e4b944",
+      "sha256": "d87118132a9ec769400451e3b49264e96888c6453807e11a80a297b395ee9d24",
+      "sha1_git": "10352ccda907c5fc67a25ed675d928ae354a002f",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": "unknown-spdx OR unknown-spdx",
+      "detected_license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+      "license_detections": [
+        {
+          "license_expression": "unknown-spdx OR unknown-spdx",
+          "license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+          "matches": [
+            {
+              "license_expression": "unknown-spdx OR unknown-spdx",
+              "license_expression_spdx": "LicenseRef-scancode-unknown-spdx OR LicenseRef-scancode-unknown-spdx",
+              "from_file": "before/target_chains__ethereum__contracts__forge-test__PulseScheduler.t__b7d4667b.sol",
+              "start_line": 1,
+              "end_line": 1,
+              "matcher": "1-spdx-id",
+              "score": 100.0,
+              "matched_length": 5,
+              "match_coverage": 100.0,
+              "rule_relevance": 100,
+              "rule_identifier": "spdx-license-identifier-unknown_spdx_or_unknown_spdx-fda518f5fb1f46ab7dc6a805107e57092ffa4818",
+              "rule_url": null
+            }
+          ],
+          "identifier": "unknown_spdx_or_unknown_spdx-845f0495-b911-ad62-5a3b-fa855a7ff7c3"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 0.08,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}

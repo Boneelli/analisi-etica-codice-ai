@@ -1,0 +1,369 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "32.5.0",
+      "options": {
+        "input": [
+          "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\data\\files\\3192543252\\before"
+        ],
+        "--copyright": true,
+        "--info": true,
+        "--json-pp": "C:\\Users\\Alessandro\\Desktop\\Tesi\\Tirocinio\\tesi-setup\\results\\scancode_raw\\3192543252_before.json",
+        "--license": true,
+        "--processes": "2"
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2026-07-01T151407.282013",
+      "end_timestamp": "2026-07-01T151414.400776",
+      "output_format_version": "4.1.0",
+      "duration": 7.118778467178345,
+      "message": null,
+      "errors": [],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "win",
+          "cpu_architecture": "64",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "platform_version": "10.0.26200",
+          "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]"
+        },
+        "spdx_license_list_version": "3.27",
+        "files_count": 4
+      }
+    }
+  ],
+  "license_detections": [
+    {
+      "identifier": "mit-4013be3e-41d7-c943-a271-93dccbc7653e",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT",
+      "detection_count": 4,
+      "reference_matches": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "from_file": "before/client__src__plugins__zeebe-plugin__deployment-plugin____tests____DeploymentConfigValidatorSpec__59ba8717.js",
+          "start_line": 2,
+          "end_line": 8,
+          "matcher": "3-seq",
+          "score": 72.22,
+          "matched_length": 39,
+          "match_coverage": 72.22,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_1059.RULE",
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_1059.RULE"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "before",
+      "type": "directory",
+      "name": "before",
+      "base_name": "before",
+      "extension": "",
+      "size": 0,
+      "date": null,
+      "sha1": null,
+      "md5": null,
+      "sha256": null,
+      "sha1_git": null,
+      "mime_type": null,
+      "file_type": null,
+      "programming_language": null,
+      "is_binary": false,
+      "is_text": false,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": false,
+      "is_script": false,
+      "detected_license_expression": null,
+      "detected_license_expression_spdx": null,
+      "license_detections": [],
+      "license_clues": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "files_count": 4,
+      "dirs_count": 0,
+      "size_count": 53839,
+      "scan_errors": []
+    },
+    {
+      "path": "before/client__src__plugins__zeebe-plugin__deployment-plugin____tests____DeploymentConfigValidatorSpec__59ba8717.js",
+      "type": "file",
+      "name": "client__src__plugins__zeebe-plugin__deployment-plugin____tests____DeploymentConfigValidatorSpec__59ba8717.js",
+      "base_name": "client__src__plugins__zeebe-plugin__deployment-plugin____tests____DeploymentConfigValidatorSpec__59ba8717",
+      "extension": ".js",
+      "size": 15841,
+      "date": "2026-07-01",
+      "sha1": "76175918f83d53cc40cdd063abd30b466c60ba01",
+      "md5": "28245209b6cdede2591bc10dbe797b28",
+      "sha256": "be5563901263f6db3c8d70eabf9783effc5b4a667f616e133f9ab3ba0737f748",
+      "sha1_git": "d08e24e12dde2ee3db27159934246a32dd61bc47",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "JavaScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "before/client__src__plugins__zeebe-plugin__deployment-plugin____tests____DeploymentConfigValidatorSpec__59ba8717.js",
+              "start_line": 2,
+              "end_line": 8,
+              "matcher": "3-seq",
+              "score": 72.22,
+              "matched_length": 39,
+              "match_coverage": 72.22,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_1059.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_1059.RULE"
+            }
+          ],
+          "identifier": "mit-4013be3e-41d7-c943-a271-93dccbc7653e"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 3.1,
+      "copyrights": [
+        {
+          "copyright": "Copyright Camunda Services GmbH",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Camunda Services GmbH",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/client__src__plugins__zeebe-plugin__deployment-plugin__DeploymentConfigForm__11f73393.js",
+      "type": "file",
+      "name": "client__src__plugins__zeebe-plugin__deployment-plugin__DeploymentConfigForm__11f73393.js",
+      "base_name": "client__src__plugins__zeebe-plugin__deployment-plugin__DeploymentConfigForm__11f73393",
+      "extension": ".js",
+      "size": 11087,
+      "date": "2026-07-01",
+      "sha1": "bacdaf78fe76e7d33b23eb13ba49e6e340ef98d3",
+      "md5": "d5007cb661fc1f4687f31506379cd97e",
+      "sha256": "64e65f3da00e128d3f031bf1fc6a35a14503cd9f3a3768305033d940323b076a",
+      "sha1_git": "ea58a32f3f6575ab3416261686d71697916637d3",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "JavaScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "before/client__src__plugins__zeebe-plugin__deployment-plugin__DeploymentConfigForm__11f73393.js",
+              "start_line": 2,
+              "end_line": 8,
+              "matcher": "3-seq",
+              "score": 72.22,
+              "matched_length": 39,
+              "match_coverage": 72.22,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_1059.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_1059.RULE"
+            }
+          ],
+          "identifier": "mit-4013be3e-41d7-c943-a271-93dccbc7653e"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 6.17,
+      "copyrights": [
+        {
+          "copyright": "Copyright Camunda Services GmbH",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Camunda Services GmbH",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/client__src__remote____tests____ZeebeAPISpec__c9ca1a7a.js",
+      "type": "file",
+      "name": "client__src__remote____tests____ZeebeAPISpec__c9ca1a7a.js",
+      "base_name": "client__src__remote____tests____ZeebeAPISpec__c9ca1a7a",
+      "extension": ".js",
+      "size": 22875,
+      "date": "2026-07-01",
+      "sha1": "6e3bdbacfaa8363a59bf3d061add161ca6caf002",
+      "md5": "7291565998d94e61dfcbdd12c7ebf433",
+      "sha256": "de143e2825e11320436dc54581849f199ae2506fe7d54c16b7a8f4e83e81aa07",
+      "sha1_git": "07a1c9675443322ce06e169fa1ff11ae722e4a09",
+      "mime_type": "text/x-java",
+      "file_type": "Java source, ASCII text",
+      "programming_language": "JavaScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "before/client__src__remote____tests____ZeebeAPISpec__c9ca1a7a.js",
+              "start_line": 2,
+              "end_line": 8,
+              "matcher": "3-seq",
+              "score": 72.22,
+              "matched_length": 39,
+              "match_coverage": 72.22,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_1059.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_1059.RULE"
+            }
+          ],
+          "identifier": "mit-4013be3e-41d7-c943-a271-93dccbc7653e"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 1.94,
+      "copyrights": [
+        {
+          "copyright": "Copyright Camunda Services GmbH",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Camunda Services GmbH",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    },
+    {
+      "path": "before/client__src__remote__ZeebeAPI__1a0cf0c6.js",
+      "type": "file",
+      "name": "client__src__remote__ZeebeAPI__1a0cf0c6.js",
+      "base_name": "client__src__remote__ZeebeAPI__1a0cf0c6",
+      "extension": ".js",
+      "size": 4036,
+      "date": "2026-07-01",
+      "sha1": "ae64bc3fc0d6e5eae7cd61afd5604017c98734ff",
+      "md5": "0fa2a57a1a2eec6c016072492af06234",
+      "sha256": "3c3358b44b85bd82dd2643630bb274e0f9dfb0a45b8f0669c4cac39e7c6f1b8c",
+      "sha1_git": "4255d21f8b985b299dcfafba0ba3c08dddc1996e",
+      "mime_type": "text/plain",
+      "file_type": "ASCII text",
+      "programming_language": "JavaScript",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": false,
+      "detected_license_expression": "mit",
+      "detected_license_expression_spdx": "MIT",
+      "license_detections": [
+        {
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT",
+          "matches": [
+            {
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT",
+              "from_file": "before/client__src__remote__ZeebeAPI__1a0cf0c6.js",
+              "start_line": 2,
+              "end_line": 8,
+              "matcher": "3-seq",
+              "score": 72.22,
+              "matched_length": 39,
+              "match_coverage": 72.22,
+              "rule_relevance": 100,
+              "rule_identifier": "mit_1059.RULE",
+              "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_1059.RULE"
+            }
+          ],
+          "identifier": "mit-4013be3e-41d7-c943-a271-93dccbc7653e"
+        }
+      ],
+      "license_clues": [],
+      "percentage_of_license_text": 10.6,
+      "copyrights": [
+        {
+          "copyright": "Copyright Camunda Services GmbH",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "holders": [
+        {
+          "holder": "Camunda Services GmbH",
+          "start_line": 2,
+          "end_line": 2
+        }
+      ],
+      "authors": [],
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": []
+    }
+  ]
+}
