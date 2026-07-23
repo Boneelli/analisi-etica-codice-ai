@@ -1,17 +1,17 @@
 REPORT RISULTATI ESPERIMENTO
 
-Mapping PR->agente: parquet (completo, 250 PR) — 250 PR mappate
+Mapping PR->agente: parquet (completo, 250 PR) — 1000 PR mappate
 
 ========================================================================
 BASE DI NORMALIZZAZIONE (quantita' di codice per agente)
 ========================================================================
               n_funzioni  n_file_distinti
 agent                                    
-Claude_Code        21134             1087
-Copilot             6379              453
-Cursor              3452              307
-Devin               3175              330
-OpenAI_Codex        1899              136
+Claude_Code        49801             2974
+Copilot            39478             1795
+Cursor             27477             1238
+Devin              14232             1673
+OpenAI_Codex        8925              692
 
 NOTA: lo sbilanciamento e' forte (Claude_Code ha ~10x le funzioni di
 Codex). Le metriche seguenti sono NORMALIZZATE per permettere un
@@ -22,39 +22,39 @@ confronto equo tra agenti che producono quantita' di codice diverse.
 ========================================================================
 
 --- Complessita' ciclomatica (CCN) per funzione ---
-              media  mediana  p90  max      n
-agent                                        
-Claude_Code    2.43      1.0  5.0  408  21134
-Copilot        2.91      1.0  6.0  195   6379
-Cursor         2.58      1.0  5.0  110   3452
-Devin          2.33      1.0  5.0   86   3175
-OpenAI_Codex   4.31      2.0  9.0  413   1899
+              media  mediana  p90   max      n
+agent                                         
+Claude_Code    2.51      1.0  5.0   408  49801
+Copilot        3.01      1.0  6.0   906  39478
+Cursor         3.42      1.0  7.0  1356  27477
+Devin          2.56      1.0  5.0   286  14232
+OpenAI_Codex   4.01      1.0  8.0   413   8925
 
 --- Test robustezza: CCN media escludendo il 5% piu' complesso ---
               media_completa  media_troncata_95%
-Claude_Code             2.43                1.71
-Copilot                 2.91                2.11
-Cursor                  2.58                1.78
-Devin                   2.33                1.73
-OpenAI_Codex            4.31                2.70
+Claude_Code             2.51                1.79
+Copilot                 3.01                1.96
+Cursor                  3.42                2.23
+Devin                   2.56                1.85
+OpenAI_Codex            4.01                2.53
 
 --- % funzioni 'smelly' per tipo di smell (NORMALIZZATO su n funzioni) ---
               perc_CCN_alto(>10)  perc_long_method(>50nloc)  perc_troppi_param(>5)
 agent                                                                             
-Claude_Code                 2.70                       4.59                   1.21
-Copilot                     4.17                       3.09                   3.73
-Cursor                      3.56                       5.82                   2.03
-Devin                       2.55                       6.87                   1.35
-OpenAI_Codex                6.85                       5.63                   0.32
+Claude_Code                 3.09                       4.22                   1.64
+Copilot                     4.00                       4.81                   2.45
+Cursor                      5.14                       5.19                   2.11
+Devin                       3.04                       6.92                   2.02
+OpenAI_Codex                7.32                       6.15                   0.72
 
 --- Green Smell Density (per PR) ---
               media  mediana  dev_std  n_PR
 agent                                      
-Claude_Code   0.073    0.040    0.096    43
-Copilot       0.063    0.050    0.059    39
-Cursor        0.117    0.076    0.182    33
-Devin         0.102    0.066    0.130    34
-OpenAI_Codex  0.152    0.066    0.235    38
+Claude_Code   0.084    0.061    0.111   158
+Copilot       0.095    0.068    0.109   139
+Cursor        0.110    0.077    0.150   126
+Devin         0.099    0.064    0.119   119
+OpenAI_Codex  0.156    0.100    0.179   139
 
 NOTA: la media puo' essere alzata da poche PR con density molto
 alta; confrontare sempre con la mediana. Le metriche per-funzione
@@ -64,29 +64,34 @@ alta; confrontare sempre con la mediana. Le metriche per-funzione
 2. SUBJECT RIGHTS — Data Leakage (Gitleaks)
 ========================================================================
 
-Totale finding: 23 su 8 PR distinte
+Totale finding: 98 su 28 PR distinte
 
 --- Finding grezzi per agente ---
 agent
-Claude_Code     10
-Copilot          7
+Claude_Code     45
+Copilot         22
 Cursor           0
-Devin            0
-OpenAI_Codex     6
+Devin           23
+OpenAI_Codex     8
 
 --- Tipi di secret rilevati ---
 RuleID
-generic-api-key    19
-private-key         4
+generic-api-key        60
+curl-auth-header       20
+stripe-access-token     6
+private-key             5
+slack-webhook-url       5
+algolia-api-key         1
+slack-bot-token         1
 
 --- Leak NORMALIZZATI per 1000 funzioni analizzate ---
               leak_grezzi  n_funzioni  leak_per_1000_funz
 agent                                                    
-Claude_Code            10       21134               0.473
-Copilot                 7        6379               1.097
-Cursor                  0        3452               0.000
-Devin                   0        3175               0.000
-OpenAI_Codex            6        1899               3.160
+Claude_Code            45       49801               0.904
+Copilot                22       39478               0.557
+Cursor                  0       27477               0.000
+Devin                  23       14232               1.616
+OpenAI_Codex            8        8925               0.896
 
 NOTA: la normalizzazione puo' ribaltare la classifica grezza —
 un agente con molti leak assoluti ma tanto codice puo' risultare
@@ -96,7 +101,7 @@ piu' 'pulito' per unita' di codice di uno con pochi leak ma poco codice.
 VALIDAZIONE (deduplicazione + controllo manuale)
 ------------------------------------------------------------
 
-Finding grezzi: 23  ->  segreti univoci: 14 (9 erano duplicati)
+Finding grezzi: 98  ->  segreti univoci: 14 (84 erano duplicati)
 
 --- Esito per categoria (su segreti univoci) ---
 categoria_finale
@@ -133,30 +138,81 @@ una matrice SPDX completa potrebbe rilevare casi non catturati.
 4. FAIRNESS (LLM-as-judge)
 ========================================================================
 
-PR valutate: 250 | errori di parsing: 0
+PR valutate: 1000 | errori di parsing: 0
 
 --- Distribuzione punteggio 'overall_ethics' ---
 score_overall_ethics
-2.0      1
-3.0    248
-4.0      1
+2.0      8
+3.0    961
+4.0     30
+5.0      1
 
---- PR con almeno un punteggio non-neutro (!=3): 4 su 250 ---
+--- PR con almeno un punteggio non-neutro (!=3): 54 su 1000 ---
 Conteggio casi non-neutri per agente (NON medie - vedi nota):
-  Claude_Code     3
-  Copilot         1
-  Cursor          0
-  Devin           0
-  OpenAI_Codex    0
+  Claude_Code     13
+  Copilot         7
+  Cursor          13
+  Devin           15
+  OpenAI_Codex    6
 
 Dettaglio casi non-neutri:
-     pr_id       agent  score_demographic_fairness  score_accessibility_inclusion  score_inclusive_language  score_overall_ethics
-3263934382 Claude_Code                         3.0                            2.0                       3.0                   2.0
-3271988317 Claude_Code                         3.0                            4.0                       3.0                   4.0
-3171901980 Claude_Code                         3.0                            2.0                       3.0                   3.0
-3253643080     Copilot                         3.0                            4.0                       3.0                   3.0
+     pr_id        agent  score_demographic_fairness  score_accessibility_inclusion  score_inclusive_language  score_overall_ethics
+3263934382  Claude_Code                         3.0                            2.0                       3.0                   2.0
+3271988317  Claude_Code                         3.0                            4.0                       3.0                   4.0
+3171901980  Claude_Code                         3.0                            2.0                       3.0                   3.0
+3253643080      Copilot                         3.0                            4.0                       3.0                   3.0
+3165431934  Claude_Code                         3.0                            4.0                       3.0                   4.0
+3185859728  Claude_Code                         2.0                            3.0                       3.0                   2.0
+3258270000  Claude_Code                         3.0                            2.0                       3.0                   2.0
+2914376188  Claude_Code                         3.0                            4.0                       3.0                   4.0
+3265709660  Claude_Code                         3.0                            4.0                       3.0                   4.0
+3248781517  Claude_Code                         3.0                            4.0                       3.0                   4.0
+3199623142  Claude_Code                         3.0                            2.0                       3.0                   3.0
+3237343612  Claude_Code                         3.0                            4.0                       3.0                   4.0
+3150240545  Claude_Code                         3.0                            2.0                       3.0                   3.0
+3136804156  Claude_Code                         3.0                            4.0                       3.0                   4.0
+3179782246      Copilot                         3.0                            4.0                       3.0                   4.0
+3118970869      Copilot                         3.0                            3.0                       3.0                   5.0
+3273174258      Copilot                         3.0                            4.0                       3.0                   4.0
+3144364687      Copilot                         3.0                            4.0                       3.0                   4.0
+3097369537      Copilot                         3.0                            2.0                       3.0                   2.0
+3147444643      Copilot                         3.0                            4.0                       3.0                   4.0
+3207947406       Cursor                         3.0                            4.0                       3.0                   4.0
+3199940608       Cursor                         3.0                            4.0                       3.0                   4.0
+3255353087       Cursor                         3.0                            2.0                       3.0                   3.0
+3127380361       Cursor                         3.0                            4.0                       3.0                   4.0
+3191221248       Cursor                         3.0                            4.0                       3.0                   4.0
+3189039569       Cursor                         3.0                            3.0                       1.0                   2.0
+3180777350       Cursor                         2.0                            3.0                       3.0                   3.0
+3206168836       Cursor                         3.0                            4.0                       3.0                   3.0
+3225620441       Cursor                         3.0                            3.0                       3.0                   4.0
+3254652768       Cursor                         3.0                            2.0                       3.0                   3.0
+3252342736       Cursor                         3.0                            4.0                       3.0                   4.0
+3275521807       Cursor                         3.0                            4.0                       3.0                   4.0
+3191369762       Cursor                         3.0                            4.0                       3.0                   4.0
+3158433932        Devin                         3.0                            4.0                       3.0                   4.0
+3018286070        Devin                         2.0                            4.0                       3.0                   3.0
+3012246879        Devin                         3.0                            3.0                       1.0                   2.0
+2758172742        Devin                         3.0                            2.0                       3.0                   3.0
+2836446355        Devin                         3.0                            4.0                       3.0                   4.0
+3213229671        Devin                         3.0                            4.0                       3.0                   3.0
+3023387216        Devin                         3.0                            3.0                       1.0                   2.0
+3220255779        Devin                         2.0                            3.0                       3.0                   2.0
+3235581539        Devin                         3.0                            3.0                       2.0                   3.0
+2934119459        Devin                         3.0                            4.0                       3.0                   4.0
+2989136571        Devin                         3.0                            4.0                       3.0                   4.0
+2993437629        Devin                         3.0                            3.0                       3.0                   4.0
+3070079353        Devin                         3.0                            4.0                       3.0                   4.0
+3126094423        Devin                         3.0                            4.0                       3.0                   4.0
+3028603816        Devin                         3.0                            4.0                       3.0                   4.0
+3207515118 OpenAI_Codex                         2.0                            3.0                       3.0                   3.0
+3070076491 OpenAI_Codex                         3.0                            2.0                       3.0                   3.0
+3156371323 OpenAI_Codex                         3.0                            4.0                       3.0                   4.0
+3191518779 OpenAI_Codex                         2.0                            3.0                       3.0                   3.0
+3189854647 OpenAI_Codex                         3.0                            4.0                       3.0                   4.0
+3125336351 OpenAI_Codex                         3.0                            4.0                       3.0                   4.0
 
-NOTA: NON si riportano le medie dei punteggi per agente. Con 246 PR su 250 a valore neutro (3), le medie sarebbero tutte ~3.0 e le differenze (dovute a 1-2 casi isolati su 50 PR per agente) NON sarebbero statisticamente significative: darebbero l'impressione fuorviante di un pattern sistematico tra agenti inesistente.
+NOTA: NON si riportano le medie dei punteggi per agente. Con 946 PR su 1000 a valore neutro (3), le medie sarebbero tutte ~3.0 e le differenze (dovute a 1-2 casi isolati su 50 PR per agente) NON sarebbero statisticamente significative: darebbero l'impressione fuorviante di un pattern sistematico tra agenti inesistente.
 
 ------------------------------------------------------------
 VALIDAZIONE MANUALE (accordo umano-judge)
@@ -175,32 +231,32 @@ l'affidabilita' del judge sul dataset finale.
 5. COPERTURA E RECUPERO FILE
 ========================================================================
 
-File totali attesi: 8803
-  recuperati (after=True): 7667 (87.1%)
-  falliti (after=False):   719 (8.2%)
-  rimossi (n/a_removed):   417 (4.7%)
+File totali attesi: 30753
+  recuperati (after=True): 25454 (82.8%)
+  falliti (after=False):   3186 (10.4%)
+  rimossi (n/a_removed):   2113 (6.9%)
 
 --- Impatto reale sulle metriche di complessita' ---
-Dei 719 file falliti, solo 381 (53.0%) erano CODICE.
-Perdita sul codice analizzabile: 381/7667 = 4.97%
+Dei 3186 file falliti, solo 1803 (56.6%) erano CODICE.
+Perdita sul codice analizzabile: 1803/25454 = 7.08%
 (Il resto erano config/documentazione, che Lizard non analizza:
  il loro mancato recupero non impatta le metriche di complessita'.)
 
 --- Tasso di fallimento file per agente (%) ---
 agent
-Claude_Code      3.50
-Copilot          6.97
-Cursor          14.49
-Devin           12.80
-OpenAI_Codex     8.21
+Claude_Code      4.67
+Copilot         12.16
+Cursor           8.69
+Devin           18.57
+OpenAI_Codex     1.87
 
 --- Copertura PR: PR con almeno un file recuperato, per agente ---
 agent
-Claude_Code     49
-Copilot         50
-Cursor          46
-Devin           45
-OpenAI_Codex    48
+Claude_Code     199
+Copilot         199
+Cursor          184
+Devin           165
+OpenAI_Codex    197
 
 NOTA METODOLOGICA: 'PR completamente recuperata' NON e' una buona
 metrica di confronto — dipende dal numero di file per PR piu' che

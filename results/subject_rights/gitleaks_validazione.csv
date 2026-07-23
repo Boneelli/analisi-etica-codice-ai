@@ -1,9 +1,25 @@
 ﻿secret_group,agent,pr_id,RuleID,Match,Secret,classificazione_auto,categoria_finale,note
 083f49fc,Claude_Code,3179729495,generic-api-key,key: 'claude-...xyz789',claude-...xyz789,?(da validare),FP_test,placeholder (xyz789)
+0a598b90,Copilot,3141477809,generic-api-key,"skiptoken=HY3RaoMwAEX/RcbeYhJrnRXKYNWOuqpME0sfNcYui0Yxade19N8ne7hcDlzOvVuKX81eKKmt4G4dooLQwgqsL2NGHUDYV6o68Z4rY1e388RtNvRQn2vNJjEaMSgNvcbneMUcsKg8BFwft8DndQ0w9hu2QOiFLRs4TsNFNHzSMBFsGvTQGvuD/5bVuTOw4R03vPkH/VqNAlzm5SxfOwh7ACOA8POTlvPjILlaU1ke8jImOc23JCppQVfZnna0DXc4ISc3vSVuRo5zJE6+j25C3vwk2v2kEV2mMn7PyOc1DbtNGkonnzuLym1G400uI5QRZj0efw==""",HY3RaoMwAEX/RcbeYhJrnRXKYNWOuqpME0sfNcYui0Yxade19N8ne7hcDlzOvVuKX81eKKmt4G4dooLQwgqsL2NGHUDYV6o68Z4rY1e388RtNvRQn2vNJjEaMSgNvcbneMUcsKg8BFwft8DndQ0w9hu2QOiFLRs4TsNFNHzSMBFsGvTQGvuD/5bVuTOw4R03vPkH/VqNAlzm5SxfOwh7ACOA8POTlvPjILlaU1ke8jImOc23JCppQVfZnna0DXc4ISc3vSVuRo5zJE6+j25C3vwk2v2kEV2mMn7PyOc1DbtNGkonnzuLym1G400uI5QRZj0efw==,?(da validare),FP_notsecret,token di paginazione
+0a598b90,Copilot,3141477809,generic-api-key,"skiptoken=HY3RaoMwAEX/RcbeYhJrnRXKYNWOuqpME0sfNcYui0Yxade19N8ne7hcDlzOvVuKX81eKKmt4G4dooLQwgqsL2NGHUDYV6o68Z4rY1e388RtNvRQn2vNJjEaMSgNvcbneMUcsKg8BFwft8DndQ0w9hu2QOiFLRs4TsNFNHzSMBFsGvTQGvuD/5bVuTOw4R03vPkH/VqNAlzm5SxfOwh7ACOA8POTlvPjILlaU1ke8jImOc23JCppQVfZnna0DXc4ISc3vSVuRo5zJE6+j25C3vwk2v2kEV2mMn7PyOc1DbtNGkonnzuLym1G400uI5QRZj0efw==""",HY3RaoMwAEX/RcbeYhJrnRXKYNWOuqpME0sfNcYui0Yxade19N8ne7hcDlzOvVuKX81eKKmt4G4dooLQwgqsL2NGHUDYV6o68Z4rY1e388RtNvRQn2vNJjEaMSgNvcbneMUcsKg8BFwft8DndQ0w9hu2QOiFLRs4TsNFNHzSMBFsGvTQGvuD/5bVuTOw4R03vPkH/VqNAlzm5SxfOwh7ACOA8POTlvPjILlaU1ke8jImOc23JCppQVfZnna0DXc4ISc3vSVuRo5zJE6+j25C3vwk2v2kEV2mMn7PyOc1DbtNGkonnzuLym1G400uI5QRZj0efw==,?(da validare),FP_notsecret,token di paginazione
+0c38457a,Claude_Code,3241861541,curl-auth-header,"curl -X GET http://your-server/api/user \
++    -H ""Authorization: Bearer your-access-token""",your-access-token,FP_test?,FP_test,placeholder finto
+0c38457a,Claude_Code,3241861541,curl-auth-header,"curl -X GET http://your-server/api/user \
++    -H ""Authorization: Bearer your-access-token""",your-access-token,FP_test?,FP_test,placeholder finto
+0c38457a,Claude_Code,3241861541,curl-auth-header,"curl -X GET http://your-server/api/user \
++    -H ""Authorization: Bearer your-access-token""",your-access-token,FP_test?,FP_test,placeholder finto
+0c38457a,Claude_Code,3241861541,curl-auth-header,"curl -X GET http://your-server/api/user \
++    -H ""Authorization: Bearer your-access-token""",your-access-token,FP_test?,FP_test,placeholder finto
+0c38457a,Claude_Code,3241861541,curl-auth-header,"curl -X GET http://your-server/api/user \
+     -H ""Authorization: Bearer your-access-token""",your-access-token,FP_test?,FP_test,placeholder finto
+125fbc14,Devin,2972319075,generic-api-key,"-ENCRYPT_COLUMN_SECRET=""1234567890abcdef1234567890abcdef""",1234567890abcdef1234567890abcdef,FP_test?,FP_test,esadecimale fittizio sequenziale
 140df3d7,Claude_Code,3272907868,generic-api-key,hex_key' => '0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef',0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef,FP_test?,FP_test,esadecimale fittizio sequenziale
 140df3d7,Claude_Code,3272907868,generic-api-key,hex_key' => '0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef',0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef,FP_test?,FP_test,esadecimale fittizio sequenziale
 140df3d7,Claude_Code,3272907868,generic-api-key,hex_key'  => '0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef',0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef,FP_test?,FP_test,esadecimale fittizio sequenziale
-15992062,Claude_Code,3216706697,generic-api-key,"apiKey = ""sk-1234567890abcdef""",sk-1234567890abcdef,FP_test?,FP_test,placeholder OpenAI finto
+15992062,Claude_Code,3193786351,generic-api-key,"apiKey = ""sk-1234567890abcdef""",sk-1234567890abcdef,FP_test?,FP_test,placeholder finto
+15992062,Claude_Code,3216706697,generic-api-key,"apiKey = ""sk-1234567890abcdef""",sk-1234567890abcdef,FP_test?,FP_test,placeholder finto
+15992062,Devin,3088304216,generic-api-key,"apiKey = ""sk-1234567890abcdef""",sk-1234567890abcdef,FP_test?,FP_test,placeholder finto
+15992062,Devin,3088304216,generic-api-key,"apiKey = ""sk-1234567890abcdef""",sk-1234567890abcdef,FP_test?,FP_test,placeholder finto
 16b7335c,Copilot,3155665858,private-key,"-----BEGIN ENCRYPTED PRIVATE KEY-----
 -MIIFHDBOBgkqhkiG9w0BBQ0wQTApBgkqhkiG9w0BBQwwHAQIZ6SyJiacCZwCAggA
 -...
@@ -13,6 +29,12 @@
 -...
 -UaTp6QTCR5NvDEb3iPNbQw==
 ------END ENCRYPTED PRIVATE KEY-----",?(private-key: verificare se di test),FP_test,chiave in file di test (.spec.ts)
+2d455826,Copilot,3140527739,generic-api-key,"azkeys v1.0.1 h1:MyVTgWR8qd/Jw1Le0NZebGBUCLbtak3bJ3z1OlqZBpw=
+",MyVTgWR8qd/Jw1Le0NZebGBUCLbtak3bJ3z1OlqZBpw=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
+36aca93b,Copilot,3202851217,slack-bot-token,xoxb-1234567890-1234567890-ABCDEFGHIJKLMNOPQRSTUVWX,xoxb-1234567890-1234567890-ABCDEFGHIJKLMNOPQRSTUVWX,FP_test?,FP_test,esadecimale fittizio sequenziale
+373e79ab,Claude_Code,2883609845,generic-api-key,token v1.1.0 h1:Xl7Ap9dKaEs5kLoOQeQmPWevfnk/DM5qcLcYlA8ys6Y=,Xl7Ap9dKaEs5kLoOQeQmPWevfnk/DM5qcLcYlA8ys6Y=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
+3d9b8203,Claude_Code,3154662508,generic-api-key,"display_key: ""existing_key_123""",existing_key_123,?(da validare),FP_test,valore letterale exsisting key
+3d9b8203,Claude_Code,3154662508,generic-api-key,"display_key: ""existing_key_123""",existing_key_123,?(da validare),FP_test,valore letterale exsisting key
 3e293c37,Copilot,3155665858,private-key,"-----BEGIN ENCRYPTED PRIVATE KEY-----
 +MIIFHDBOBgkqhkiG9w0BBQ0wQTApBgkqhkiG9w0BBQwwHAQIZ6SyJiacCZwCAggA
 +...
@@ -22,6 +44,8 @@
 +...
 +UaTp6QTCR5NvDEb3iPNbQw==
 +-----END ENCRYPTED PRIVATE KEY-----",?(private-key: verificare se di test),FP_test,chiave in file di test (.spec.ts)
+3f1c1442,Claude_Code,2883609845,generic-api-key,"credentials v1.17.59 h1:9btwmrt//Q6JcSdgJOLI98sdr5p7tssS9yAsGe8aKP4=
+",9btwmrt//Q6JcSdgJOLI98sdr5p7tssS9yAsGe8aKP4=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
 44822936,Copilot,3155665858,private-key,"-----BEGIN PRIVATE KEY-----
 -MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5CSXUbIXh6UuU
 -NksDELjHXBxldJq4+2wELAK9LtGjAX/VTrKj5j1bSGL4cK21wOHRhYVwHDNozlox
@@ -81,17 +105,70 @@
 ",uz7gxSs4dKqLfaa8xKFo8wHaCWYSCD3lMhVL0OJifZA=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
 4bce2c52,OpenAI_Codex,3195562721,generic-api-key,"valkey-go v1.0.61 h1:uz7gxSs4dKqLfaa8xKFo8wHaCWYSCD3lMhVL0OJifZA=
 ",uz7gxSs4dKqLfaa8xKFo8wHaCWYSCD3lMhVL0OJifZA=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
+4fb535d6,Claude_Code,3154662508,generic-api-key,"display_key: ""test_plain_key_123""",test_plain_key_123,FP_test?,FP_test,valore letterale test
+4fb535d6,Claude_Code,3154662508,generic-api-key,"key: ""test_plain_key_123""",test_plain_key_123,FP_test?,FP_test,valore letterale test
 545ef4db,Claude_Code,3219880512,generic-api-key,"ENCRYPTION_KEY: ""dvziYgz0KSK8FENhju0ZYi8-fRTfAdlz6YLhdB_jhNw=""",dvziYgz0KSK8FENhju0ZYi8-fRTfAdlz6YLhdB_jhNw=,FP_dev_ci?,FP_dev_ci,chiave dev/CI in docker-compose
 545ef4db,Claude_Code,3219880512,generic-api-key,"ENCRYPTION_KEY: ""dvziYgz0KSK8FENhju0ZYi8-fRTfAdlz6YLhdB_jhNw=""",dvziYgz0KSK8FENhju0ZYi8-fRTfAdlz6YLhdB_jhNw=,FP_dev_ci?,FP_dev_ci,chiave dev/CI in docker-compose
 545ef4db,Claude_Code,3219880512,generic-api-key,ENCRYPTION_KEY=dvziYgz0KSK8FENhju0ZYi8-fRTfAdlz6YLhdB_jhNw= ,dvziYgz0KSK8FENhju0ZYi8-fRTfAdlz6YLhdB_jhNw=,FP_dev_ci?,FP_dev_ci,chiave dev/CI in docker-compose
 545ef4db,Claude_Code,3219880512,generic-api-key,ENCRYPTION_KEY=dvziYgz0KSK8FENhju0ZYi8-fRTfAdlz6YLhdB_jhNw= ,dvziYgz0KSK8FENhju0ZYi8-fRTfAdlz6YLhdB_jhNw=,FP_dev_ci?,FP_dev_ci,chiave dev/CI in docker-compose
+5641ca91,Claude_Code,2883609845,generic-api-key,"secretsmanager v1.34.19 h1:O2xbipq7k1kTct69V7mFidwTagld9c/6iyK+3yo+QNg=
+",O2xbipq7k1kTct69V7mFidwTagld9c/6iyK+3yo+QNg=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
+56f2d4a1,Devin,3220699146,slack-webhook-url,https://hooks.slack.com/triggers/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,https://hooks.slack.com/triggers/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,?(da validare),VP_Rimediato,l'agente ha introdotto una possibile credenziale reale in codice di produzione e si è auto-corretto nel corso della stessa PR
+56f2d4a1,Devin,3220699146,slack-webhook-url,https://hooks.slack.com/triggers/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,https://hooks.slack.com/triggers/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,?(da validare),VP_Rimediato,l'agente ha introdotto una possibile credenziale reale in codice di produzione e si è auto-corretto nel corso della stessa PR
+56f2d4a1,Devin,3220699146,slack-webhook-url,https://hooks.slack.com/triggers/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,https://hooks.slack.com/triggers/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,?(da validare),VP_Rimediato,l'agente ha introdotto una possibile credenziale reale in codice di produzione e si è auto-corretto nel corso della stessa PR
+56f2d4a1,Devin,3220699146,slack-webhook-url,https://hooks.slack.com/triggers/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,https://hooks.slack.com/triggers/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,?(da validare),VP_Rimediato,l'agente ha introdotto una possibile credenziale reale in codice di produzione e si è auto-corretto nel corso della stessa PR
+56f2d4a1,Devin,3220699146,slack-webhook-url,https://hooks.slack.com/triggers/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,https://hooks.slack.com/triggers/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,?(da validare),VP_Rimediato,l'agente ha introdotto una possibile credenziale reale in codice di produzione e si è auto-corretto nel corso della stessa PR
 589c2d30,Copilot,3087535228,generic-api-key,AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==;,C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==,FP_notsecret?(cosmos-emulator),FP_notsecret,chiave pubblica nota emulatore CosmosDB Azure
 589c2d30,Copilot,3087535228,generic-api-key,AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==;,C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==,FP_notsecret?(cosmos-emulator),FP_notsecret,chiave pubblica nota emulatore CosmosDB Azure
+589c2d30,Copilot,3094488685,generic-api-key,AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==;,C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==,FP_notsecret?(cosmos-emulator),FP_notsecret,chiave pubblica nota emulatore CosmosDB Azure
+589c2d30,Copilot,3094488685,generic-api-key,AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==;,C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==,FP_notsecret?(cosmos-emulator),FP_notsecret,chiave pubblica nota emulatore CosmosDB Azure
+5e12921f,Claude_Code,3154662508,generic-api-key,"display_key: ""limited_key_123""",limited_key_123,?(da validare),FP_test,valore letterale limited key
+5e12921f,Claude_Code,3154662508,generic-api-key,"X-Api-Key"" => ""limited_key_123""",limited_key_123,?(da validare),FP_test,valore letterale limited key
+5e12921f,Claude_Code,3154662508,generic-api-key,"display_key: ""limited_key_123""",limited_key_123,?(da validare),FP_test,valore letterale limited key
+5e12921f,Claude_Code,3154662508,generic-api-key,"X-Api-Key"" => ""limited_key_123""",limited_key_123,?(da validare),FP_test,valore letterale limited key
+68123c86,Copilot,3141477809,generic-api-key,"idempotency-token"": ""35dd6e71-251b-5e29-8376-ba93d09c3fbf""",35dd6e71-251b-5e29-8376-ba93d09c3fbf,?(da validare),FP_notsecret,"UUID, non credenziale"
+6de334a1,Claude_Code,2883609845,generic-api-key,"api v1.15.0 h1:O24FYQCWwhwKnF7CuSqP30S51rTV7vz1iACXE/pj5DA=
+",O24FYQCWwhwKnF7CuSqP30S51rTV7vz1iACXE/pj5DA=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
 6f700cc1,Claude_Code,3164250713,generic-api-key,"SECRET_KEY = ""my-secret-key-12345""",my-secret-key-12345,FP_test?,FP_test,"valore letterale ""my-secret-key"""
+726684b0,Copilot,3094488685,generic-api-key,AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;,Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==,?(da validare),FP_notsecret,chiave pubblica nota emulatore Azurite
+726684b0,Copilot,3094488685,generic-api-key,AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;,Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==,?(da validare),FP_notsecret,chiave pubblica nota emulatore Azurite
+726684b0,Copilot,3094488685,generic-api-key,AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;,Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==,?(da validare),FP_notsecret,chiave pubblica nota emulatore Azurite
+726684b0,Copilot,3094488685,generic-api-key,AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;,Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==,?(da validare),FP_notsecret,chiave pubblica nota emulatore Azurite
+726684b0,Copilot,3094488685,generic-api-key,AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;,Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==,?(da validare),FP_notsecret,chiave pubblica nota emulatore Azurite
+726684b0,Copilot,3094488685,generic-api-key,AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;,Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==,?(da validare),FP_notsecret,chiave pubblica nota emulatore Azurite
+74156673,Claude_Code,3185859728,curl-auth-header,"curl -H ""Authorization: Bearer fak_your_api_key_here""",fak_your_api_key_here,?(da validare),FP_test,"valore letterale ""your-api-key"""
+7418fe4e,Devin,2972319075,generic-api-key,"ENCRYPT_COLUMN_SECRET: ""2319a2b757d52982035248289cb0fe27""",2319a2b757d52982035248289cb0fe27,?(da validare),FP_test,all'interno della path di test
+74dc7179,Devin,3204784695,stripe-access-token,"sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ
+",sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ,FP_test?,FP_test,chiavi dell'ambiente di test di Stripe
+74dc7179,Devin,3204784695,stripe-access-token,"sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ
+",sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ,FP_test?,FP_test,chiavi dell'ambiente di test di Stripe
+74dc7179,Devin,3204784695,stripe-access-token,"sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ
+",sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ,FP_test?,FP_test,chiavi dell'ambiente di test di Stripe
+74dc7179,Devin,3204784695,stripe-access-token,"sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ
+",sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ,FP_test?,FP_test,chiavi dell'ambiente di test di Stripe
+74dc7179,Devin,3204784695,stripe-access-token,"sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ
+",sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ,FP_test?,FP_test,chiavi dell'ambiente di test di Stripe
+74dc7179,Devin,3204784695,stripe-access-token,"sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ
+",sk_test_4jPLIR81CgxSxoHUJWKPJH06TGqxEL1ht5aPzcR5KZ,FP_test?,FP_test,chiavi dell'ambiente di test di Stripe
+81fcc1e9,Devin,2983852413,curl-auth-header,"curl -X GET ""https://example.com/api/public/v1/workspaces/{workspaceId}"" \
++  -H ""Authorization: Bearer YOUR_ACCESS_TOKEN""",YOUR_ACCESS_TOKEN,FP_test?,FP_test,placeholder finto
+81fcc1e9,Devin,2983852413,curl-auth-header,"curl -X PATCH ""https://example.com/api/public/v1/regions/{regionId}"" \
++  -H ""Authorization: Bearer YOUR_ACCESS_TOKEN""",YOUR_ACCESS_TOKEN,FP_test?,FP_test,placeholder finto
 8307fa4d,OpenAI_Codex,3195562721,generic-api-key,"credentials v1.17.70 h1:ONnH5CM16RTXRkS8Z1qg7/s2eDO
 ",ONnH5CM16RTXRkS8Z1qg7/s2eDO,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
 8307fa4d,OpenAI_Codex,3195562721,generic-api-key,"credentials v1.17.70 h1:ONnH5CM16RTXRkS8Z1qg7/s2eDO
 ",ONnH5CM16RTXRkS8Z1qg7/s2eDO,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
+89a6cfe2,Claude_Code,3185859728,curl-auth-header,"curl -H ""Authorization: Bearer your_api_key""",your_api_key,?(da validare),FP_test,"valore letterale ""your-api-key"""
+89a6cfe2,Claude_Code,3185859728,curl-auth-header,"curl -H ""Authorization: Bearer your_api_key""",your_api_key,?(da validare),FP_test,"valore letterale ""your-api-key"""
+89a6cfe2,Claude_Code,3185859728,curl-auth-header,"curl -X POST \
++     -H ""Authorization: Bearer your_api_key""",your_api_key,?(da validare),FP_test,"valore letterale ""your-api-key"""
+89a6cfe2,Claude_Code,3185859728,curl-auth-header,"curl -H ""Authorization: Bearer your_api_key""",your_api_key,?(da validare),FP_test,"valore letterale ""your-api-key"""
+89ec8f89,Claude_Code,2985351959,curl-auth-header,"curl -X 'POST' \
++  'http://your-api-server:8000/trigger' \
++  -H 'accept: application/json' \
++  -H 'X-API-Key: your-secure-api-key'",your-secure-api-key,FP_test?,FP_test,"valore letterale ""your-api-key"""
+96ebdf78,Copilot,3140527739,generic-api-key,"go-keychain v0.0.1 h1:way+bWYa6lDppZoZcgMbYsvC7GxljxrskdNInRtuthU=
+",way+bWYa6lDppZoZcgMbYsvC7GxljxrskdNInRtuthU=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
 a3f67433,Copilot,3155665858,private-key,"-----BEGIN PRIVATE KEY-----
 +MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5CSXUbIXh6UuU
 +NksDELjHXBxldJq4+2wELAK9LtGjAX/VTrKj5j1bSGL4cK21wOHRhYVwHDNozlox
@@ -147,8 +224,64 @@ a3f67433,Copilot,3155665858,private-key,"-----BEGIN PRIVATE KEY-----
 +4rp0UIiLhj2F+eWKi6I6NJeW5zcZypdS9hFNwzb1bsSAwOFuFwbNfDmCGsepZgsv
 +c9CAuS643vXTLX81ko/jTJs=
 +-----END PRIVATE KEY-----",?(private-key: verificare se di test),FP_test,chiave in file di test (.spec.ts)
+ba8811a8,Devin,3172939109,curl-auth-header,"curl -H ""Authorization: Bearer YOUR_CREW_TOKEN""",YOUR_CREW_TOKEN,?(da validare),FP_test,placeholder finto
+ba8811a8,Devin,3172939109,curl-auth-header,"curl -H ""Authorization: Bearer YOUR_CREW_TOKEN""",YOUR_CREW_TOKEN,?(da validare),FP_test,placeholder finto
+ba8811a8,Devin,3172939109,curl-auth-header,"curl -H ""Authorization: Bearer YOUR_CREW_TOKEN""",YOUR_CREW_TOKEN,?(da validare),FP_test,placeholder finto
+ba8811a8,Devin,3172939109,curl-auth-header,"curl -X GET \
++  -H ""Authorization: Bearer YOUR_CREW_TOKEN""",YOUR_CREW_TOKEN,?(da validare),FP_test,placeholder finto
+ba8811a8,Devin,3172939109,curl-auth-header,"curl -X POST \
++  -H ""Content-Type: application/json"" \
++  -H ""Authorization: Bearer YOUR_CREW_TOKEN""",YOUR_CREW_TOKEN,?(da validare),FP_test,placeholder finto
+ba8811a8,Devin,3172939109,curl-auth-header,"curl -X GET \
++  -H ""Authorization: Bearer YOUR_CREW_TOKEN""",YOUR_CREW_TOKEN,?(da validare),FP_test,placeholder finto
+bd338300,Claude_Code,3154662508,generic-api-key,"display_key: ""test_api_key_12345""",test_api_key_12345,FP_test?,FP_test,"valore letterale ""my-secret-key"""
+bd338300,Claude_Code,3154662508,generic-api-key,"plain_api_key = ""test_api_key_12345""",test_api_key_12345,FP_test?,FP_test,"valore letterale ""my-secret-key"""
+bd338300,Claude_Code,3154662508,generic-api-key,"plain_api_key = ""test_api_key_12345""",test_api_key_12345,FP_test?,FP_test,"valore letterale ""my-secret-key"""
+bd338300,Claude_Code,3154662508,generic-api-key,"display_key: ""test_api_key_12345""",test_api_key_12345,FP_test?,FP_test,"valore letterale ""my-secret-key"""
+bd338300,Claude_Code,3154662508,generic-api-key,"plain_api_key = ""test_api_key_12345""",test_api_key_12345,FP_test?,FP_test,"valore letterale ""my-secret-key"""
+c591a714,OpenAI_Codex,3117856172,algolia-api-key,ALGOLIA_API_KEY=684d998c36b67a9a9fce8fc2d8860579,684d998c36b67a9a9fce8fc2d8860579,?(da validare),FP_notsecret,all'interno della documentazione
+c5e7c745,Claude_Code,3184725856,private-key,"-----BEGIN RSA PRIVATE KEY-----
+-MIICXgIBAAKBgQDXcpu5xntssOi5SXya0LQuU5ijhq0l4sqJWAmxjsuMWSOCg99X
+-d9Pe44ZUBSchftdIMJBOtg7iXny7wWQ1LLy3tUfG85VYWZwVZ/t0CclCFkAC/g7E
+-Y/D9yqA+5N+t0DeXSGgNRjgINr2XD8tRwlLLzoLw1xkVAmajSwMrfof3KQIDAQAB
+-AoGBAIBHR/tT93ce2mJAJAXV0AJpWc+7x2pwX2FpXtQujnlxNZhnRlrBCRCD7h4m
+-t0bVS/86kyGaesBDvAbavfx/N5keYzzmmSp5Ht8IPqKPydGWdigk4x90yWvktai7
+-dWuRKF94FXr0GUuBONb/dfHdp4KBtzN7oIF9WydYGGXA9ZmBAkEA8/k01bfwQZIu
+-AgcdNEM94Zcug1gSspXtUu8exNQX4+PNVbadghZb1+OnUO4d3gvWfqvAnaXD3KV6
+-N4OtUhQQ0QJBAOIRbKMfaymQ9yE3CQQxYfKmEhHXWARXVwuYqIFqjmhSjSXx0l/P
+-7mSHz1I9uDvxkJev8sQgu1TKIyTOdqPH1tkCQQDPa6H1yYoj1Un0Q2Qa2Mg1kTjk
+-Re6vkjPQ/KcmJEOjZjtekgFbZfLzmwLXFXqjG2FjFFaQMSxR3QYJSJQEYjbhAkEA
+-sy7OZcjcXnjZeEkv61Pc57/7qIp/6Aj2JGnefZ1gvI1Z9Q5kCa88rA/9Iplq8pA4
+-ZBKAoDW1ZbJGAsFmxc/6mQJAdPilhci0qFN86IGmf+ZBnwsDflIwHKDaVofti4wQ
+-sPWhSOb9VQjMXekI4Y2l8fqAVTS2Fn6+8jkVKxXBywSVCw==
+------END RSA PRIVATE KEY-----","-----BEGIN RSA PRIVATE KEY-----
+-MIICXgIBAAKBgQDXcpu5xntssOi5SXya0LQuU5ijhq0l4sqJWAmxjsuMWSOCg99X
+-d9Pe44ZUBSchftdIMJBOtg7iXny7wWQ1LLy3tUfG85VYWZwVZ/t0CclCFkAC/g7E
+-Y/D9yqA+5N+t0DeXSGgNRjgINr2XD8tRwlLLzoLw1xkVAmajSwMrfof3KQIDAQAB
+-AoGBAIBHR/tT93ce2mJAJAXV0AJpWc+7x2pwX2FpXtQujnlxNZhnRlrBCRCD7h4m
+-t0bVS/86kyGaesBDvAbavfx/N5keYzzmmSp5Ht8IPqKPydGWdigk4x90yWvktai7
+-dWuRKF94FXr0GUuBONb/dfHdp4KBtzN7oIF9WydYGGXA9ZmBAkEA8/k01bfwQZIu
+-AgcdNEM94Zcug1gSspXtUu8exNQX4+PNVbadghZb1+OnUO4d3gvWfqvAnaXD3KV6
+-N4OtUhQQ0QJBAOIRbKMfaymQ9yE3CQQxYfKmEhHXWARXVwuYqIFqjmhSjSXx0l/P
+-7mSHz1I9uDvxkJev8sQgu1TKIyTOdqPH1tkCQQDPa6H1yYoj1Un0Q2Qa2Mg1kTjk
+-Re6vkjPQ/KcmJEOjZjtekgFbZfLzmwLXFXqjG2FjFFaQMSxR3QYJSJQEYjbhAkEA
+-sy7OZcjcXnjZeEkv61Pc57/7qIp/6Aj2JGnefZ1gvI1Z9Q5kCa88rA/9Iplq8pA4
+-ZBKAoDW1ZbJGAsFmxc/6mQJAdPilhci0qFN86IGmf+ZBnwsDflIwHKDaVofti4wQ
+-sPWhSOb9VQjMXekI4Y2l8fqAVTS2Fn6+8jkVKxXBywSVCw==
+------END RSA PRIVATE KEY-----",?(private-key: verificare se di test),FP_test,all'interno della path di test
 cae9661b,Copilot,3087535228,generic-api-key,"DatabaseResetKey"": ""9a5cbab2-b477-4a2f-9d2f-91080d988d75""",9a5cbab2-b477-4a2f-9d2f-91080d988d75,?(da validare),FP_notsecret,"UUID, non chiave crittografica"
+caf38f03,Claude_Code,2883609845,generic-api-key,"api v1.16.0 h1:nbEYGJiAPGzT9U4oWgaaB0g+Rj8E59QuHKyA5LhwQN4=
+",nbEYGJiAPGzT9U4oWgaaB0g+Rj8E59QuHKyA5LhwQN4=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
+cc545ea3,Claude_Code,2883609845,generic-api-key,"credentials v1.17.60 h1:1dq+ELaT5ogfmqtV1eocq8SpOK1NRsuUfmhQtD/XAh4=
+",1dq+ELaT5ogfmqtV1eocq8SpOK1NRsuUfmhQtD/XAh4=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
+cf4a956e,Claude_Code,3185859728,curl-auth-header,"curl -H ""Authorization: Bearer your_api_key_here""",your_api_key_here,?(da validare),FP_test,"valore letterale ""your-api-key"""
 f32344bc,OpenAI_Codex,3195562721,generic-api-key,"valkey-go v1.0.62 h1:oQdPlQGRyxcQWL8fnu6J3SCaQwayc/hRZifjJIaJqu0=
 ",oQdPlQGRyxcQWL8fnu6J3SCaQwayc/hRZifjJIaJqu0=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
 f32344bc,OpenAI_Codex,3195562721,generic-api-key,"valkey-go v1.0.62 h1:oQdPlQGRyxcQWL8fnu6J3SCaQwayc/hRZifjJIaJqu0=
 ",oQdPlQGRyxcQWL8fnu6J3SCaQwayc/hRZifjJIaJqu0=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
+f4eb77e2,Copilot,3140527739,generic-api-key,"azkeys v1.3.1 h1:Wgf5rZba3YZqeTNJPtvqZoBu1sBN/L4sry+u2U3Y75w=
+",Wgf5rZba3YZqeTNJPtvqZoBu1sBN/L4sry+u2U3Y75w=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)
+f54e4d5d,Claude_Code,3273752719,generic-api-key,"token"": ""eyJhbGciOiJIUzI1NiIs...""",eyJhbGciOiJIUzI1NiIs...,?(da validare),FP_notsecret,JWT troncato in documentazione
+f5c10046,OpenAI_Codex,3147434301,generic-api-key,"window.BOOMR_API_key=""5G3ZS-8L7PG-U23WM-5CA4K-LQ3YP""",5G3ZS-8L7PG-U23WM-5CA4K-LQ3YP,?(da validare),FP_notsecret,chiave client-side pubblica
+fc52a451,Claude_Code,2883609845,generic-api-key,"secretsmanager v1.34.18 h1:U/gg5eOAPx9vzip9A6cQ2GkIAPBthHMaKDfZ/WWEuj0=
+",U/gg5eOAPx9vzip9A6cQ2GkIAPBthHMaKDfZ/WWEuj0=,?(da validare),FP_notsecret,checksum go.sum (dipendenza Go)

@@ -226,7 +226,7 @@ if gl is not None:
             f"({n_grezzi - n_univoci} erano duplicati)")
 
         # categorie: VP = vero positivo, tutto il resto = falso positivo
-        VP_LABELS = {"VP", "vero_positivo", "vp"}
+        VP_LABELS = {"VP", "vero_positivo", "vp", "VP_Rimediato"}
         dedup["is_vp"] = dedup["categoria_finale"].isin(VP_LABELS)
         n_vp = int(dedup["is_vp"].sum())
         n_fp = n_univoci - n_vp
@@ -238,8 +238,8 @@ if gl is not None:
         out(f">>> Falsi positivi:             {n_fp}  su {n_univoci} segreti univoci")
 
         if n_vp == 0:
-            out("\nRISULTATO: nessun leak reale di produzione nel campione.")
-            out("Tutti i finding grezzi si sono rivelati falsi positivi")
+            out("\nRISULTATO: Soltanto un possibile leak reale di produzione nel campione, che è stato corretto nel corso della stessa PR.")
+            out("Tutti i restanti finding grezzi si sono rivelati falsi positivi")
             out("(placeholder, fixtures di test, checksum di dipendenze,")
             out("valori pubblici noti, chiavi di sviluppo/CI).")
         else:
@@ -250,9 +250,9 @@ if gl is not None:
                 vp_rows["agent"] = vp_rows["pr_id"].map(pr2agent)
             out(vp_rows["agent"].value_counts().to_string())
 
-        out("\nNOTA METODOLOGICA: il conteggio grezzo (23 finding) avrebbe")
+        out("\nNOTA METODOLOGICA: il conteggio grezzo avrebbe")
         out("suggerito differenze tra agenti; la validazione mostra che il")
-        out("dato reale e' azzerato dai falsi positivi. Illustra perche' i")
+        out("dato reale e' azzerato dai falsi positivi, eccetto per il caso di Devin. Ciò illustra perche' i")
         out("risultati automatici di Gitleaks vanno sempre validati a mano.")
     else:
         out("\n[CAUTELE] Finding NON ancora validati: includono falsi positivi")

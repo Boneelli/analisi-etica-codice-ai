@@ -11,7 +11,7 @@
 | Subject Rights | Data Leakage (chiavi API, password, PII) | Gitleaks                             |
 | Sustainability | Green Smell Density + Complessità Ciclomatica (proxy energia) | Lizard                               |
 | IP Rights | Conflitti di licenza + Copyright Stripping | ScanCode Toolkit                     |
-| Fairness | Valutazione LLM-as-judge | GPT-OSS 120B (OpenRouter, free tier) |
+| Fairness | Valutazione LLM-as-judge | GPT-OSS 120B (OpenRouter) |
 
 ## Dataset
 
