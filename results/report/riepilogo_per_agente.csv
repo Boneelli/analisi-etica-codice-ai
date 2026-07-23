@@ -1,6 +1,6 @@
-agent,n_funzioni,ccn_media,ccn_mediana,perc_high_ccn,perc_long_method,perc_many_params,green_smell_density,leak_grezzi,leak_per_1000_funz
-Claude_Code,49801,2.51,1.0,3.09,4.22,1.64,0.084,45,0.904
-Copilot,39478,3.01,1.0,4.0,4.81,2.45,0.095,22,0.557
-Cursor,27477,3.42,1.0,5.14,5.19,2.11,0.11,0,0.0
-Devin,14232,2.56,1.0,3.04,6.92,2.02,0.099,23,1.616
-OpenAI_Codex,8925,4.01,1.0,7.32,6.15,0.72,0.156,8,0.896
+agent,n_funzioni,ccn_media,ccn_mediana,ccn_p90,perc_high_ccn,perc_long_method,perc_many_params,green_smell_density,eventi_fairness
+Claude_Code,49801,2.51,1.0,5.0,3.09,4.22,1.64,0.084,13
+Copilot,39478,3.01,1.0,6.0,4.0,4.81,2.45,0.095,6
+Cursor,27477,3.42,1.0,7.0,5.14,5.19,2.11,0.11,12
+Devin,14232,2.56,1.0,5.0,3.04,6.92,2.02,0.099,14
+OpenAI_Codex,8925,4.01,1.0,8.0,7.32,6.15,0.72,0.156,6

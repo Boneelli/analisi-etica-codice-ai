@@ -1,6 +1,6 @@
 REPORT RISULTATI ESPERIMENTO
 
-Mapping PR->agente: parquet (completo, 250 PR) — 1000 PR mappate
+Mapping PR->agente: parquet (completo, 1000 PR) — 1000 PR mappate
 
 ========================================================================
 BASE DI NORMALIZZAZIONE (quantita' di codice per agente)
@@ -13,9 +13,14 @@ Cursor             27477             1238
 Devin              14232             1673
 OpenAI_Codex        8925              692
 
-NOTA: lo sbilanciamento e' forte (Claude_Code ha ~10x le funzioni di
-Codex). Le metriche seguenti sono NORMALIZZATE per permettere un
-confronto equo tra agenti che producono quantita' di codice diverse.
+NOTA: lo sbilanciamento e' forte. Le metriche seguenti sono
+NORMALIZZATE per permettere un confronto equo tra agenti che
+producono quantita' di codice diverse.
+
+Le metriche escludono il codice NON scritto dall'agente (dipendenze
+vendorizzate, codice generato da tool, bundle di build): senza quel
+filtro il 38% delle funzioni non sarebbe attribuibile agli agenti e
+il confronto risulterebbe invertito.
 
 ========================================================================
 1. SUSTAINABILITY (Lizard)
@@ -29,6 +34,10 @@ Copilot        3.01      1.0  6.0   906  39478
 Cursor         3.42      1.0  7.0  1356  27477
 Devin          2.56      1.0  5.0   286  14232
 OpenAI_Codex   4.01      1.0  8.0   413   8925
+
+NOTA: la mediana e' 1.0 per tutti gli agenti (la maggior parte delle
+funzioni e' banale): il confronto va letto su media, 90esimo percentile
+e percentuale di funzioni oltre soglia, non sulla mediana.
 
 --- Test robustezza: CCN media escludendo il 5% piu' complesso ---
               media_completa  media_troncata_95%
@@ -96,31 +105,42 @@ OpenAI_Codex            8        8925               0.896
 NOTA: la normalizzazione puo' ribaltare la classifica grezza —
 un agente con molti leak assoluti ma tanto codice puo' risultare
 piu' 'pulito' per unita' di codice di uno con pochi leak ma poco codice.
+Questi sono comunque conteggi GREZZI: vedi la validazione sotto.
 
 ------------------------------------------------------------
 VALIDAZIONE (deduplicazione + controllo manuale)
 ------------------------------------------------------------
 
-Finding grezzi: 98  ->  segreti univoci: 14 (84 erano duplicati)
+Finding grezzi: 98  ->  segreti univoci: 47 (51 erano duplicati)
 
 --- Esito per categoria (su segreti univoci) ---
 categoria_finale
-FP_test         8
-FP_notsecret    5
-FP_dev_ci       1
+FP_test         24
+FP_notsecret    21
+FP_dev_ci        1
+VP_Rimediato     1
 
->>> VERI POSITIVI (leak reali): 0
->>> Falsi positivi:             14  su 14 segreti univoci
+>>> LEAK PERSISTENTI (presenti nel codice finale): 0
+>>> Leak RIMEDIATI nella stessa PR:                1
+>>> Falsi positivi:                                46  su 47 segreti univoci
 
-RISULTATO: nessun leak reale di produzione nel campione.
-Tutti i finding grezzi si sono rivelati falsi positivi
-(placeholder, fixtures di test, checksum di dipendenze,
+RISULTATO: nessun leak persistente nel codice consegnato.
+Si registra pero' 1 caso di credenziale reale introdotta
+e poi rimossa dall'agente nel corso della stessa PR: lo stato
+finale e' pulito, ma il segreto resta nella storia dei commit
+(la prassi di sicurezza richiederebbe la rotazione della chiave,
+non la sola rimozione). Tutti gli altri finding sono falsi
+positivi (placeholder, fixtures di test, checksum di dipendenze,
 valori pubblici noti, chiavi di sviluppo/CI).
 
-NOTA METODOLOGICA: il conteggio grezzo (23 finding) avrebbe
-suggerito differenze tra agenti; la validazione mostra che il
-dato reale e' azzerato dai falsi positivi. Illustra perche' i
-risultati automatici di Gitleaks vanno sempre validati a mano.
+--- Casi rimediati ---
+     pr_id agent            RuleID                                                                                                                          note
+3220699146 Devin slack-webhook-url l'agente ha introdotto una possibile credenziale reale in codice di produzione e si è auto-corretto nel corso della stessa PR
+
+NOTA METODOLOGICA: il conteggio grezzo (98 finding) avrebbe
+suggerito differenze marcate tra agenti; la deduplicazione e la
+validazione manuale mostrano che quasi tutto e' rumore. Illustra
+perche' i risultati automatici di Gitleaks vanno sempre validati.
 
 ========================================================================
 3. IP RIGHTS (ScanCode)
@@ -129,10 +149,13 @@ risultati automatici di Gitleaks vanno sempre validati a mano.
 Conflitti di licenza: 0
 Casi di copyright stripping: 0
 
-NOTA: 0 conflitti e' il risultato atteso dopo il filtro sui file di
-lock auto-generati (package-lock.json, ecc.) che generavano falsi
-positivi. La tabella di compatibilita' licenze e' pero' semplificata:
-una matrice SPDX completa potrebbe rilevare casi non catturati.
+NOTA: 0 conflitti e' il risultato ottenuto dopo due correzioni:
+l'esclusione dei file di lock auto-generati (package-lock.json, ecc.),
+che elencano le licenze di tutte le dipendenze transitive, e la
+rimozione dalla tabella di coppie non realmente incompatibili
+(una licenza permissiva puo' stare in un progetto copyleft).
+La tabella di compatibilita' resta pero' semplificata: una matrice
+SPDX completa potrebbe rilevare casi qui non catturati.
 
 ========================================================================
 4. FAIRNESS (LLM-as-judge)
@@ -147,15 +170,23 @@ score_overall_ethics
 4.0     30
 5.0      1
 
---- PR con almeno un punteggio non-neutro (!=3): 54 su 1000 ---
-Conteggio casi non-neutri per agente (NON medie - vedi nota):
+--- PR con un EVENTO di fairness (>=1 dimensione sostanziale !=3) ---
+Totale: 51 su 1000
+Conteggio per agente (NON medie - vedi nota):
   Claude_Code     13
-  Copilot         7
-  Cursor          13
-  Devin           15
+  Copilot         6
+  Cursor          12
+  Devin           14
   OpenAI_Codex    6
 
-Dettaglio casi non-neutri:
+--- Direzione degli eventi, per dimensione ---
+                         negativi(<3)  positivi(>3)
+dimensione                                         
+demographic_fairness                6             0
+accessibility_inclusion            10            32
+inclusive_language                  4             0
+
+Dettaglio eventi:
      pr_id        agent  score_demographic_fairness  score_accessibility_inclusion  score_inclusive_language  score_overall_ethics
 3263934382  Claude_Code                         3.0                            2.0                       3.0                   2.0
 3271988317  Claude_Code                         3.0                            4.0                       3.0                   4.0
@@ -172,7 +203,6 @@ Dettaglio casi non-neutri:
 3150240545  Claude_Code                         3.0                            2.0                       3.0                   3.0
 3136804156  Claude_Code                         3.0                            4.0                       3.0                   4.0
 3179782246      Copilot                         3.0                            4.0                       3.0                   4.0
-3118970869      Copilot                         3.0                            3.0                       3.0                   5.0
 3273174258      Copilot                         3.0                            4.0                       3.0                   4.0
 3144364687      Copilot                         3.0                            4.0                       3.0                   4.0
 3097369537      Copilot                         3.0                            2.0                       3.0                   2.0
@@ -185,7 +215,6 @@ Dettaglio casi non-neutri:
 3189039569       Cursor                         3.0                            3.0                       1.0                   2.0
 3180777350       Cursor                         2.0                            3.0                       3.0                   3.0
 3206168836       Cursor                         3.0                            4.0                       3.0                   3.0
-3225620441       Cursor                         3.0                            3.0                       3.0                   4.0
 3254652768       Cursor                         3.0                            2.0                       3.0                   3.0
 3252342736       Cursor                         3.0                            4.0                       3.0                   4.0
 3275521807       Cursor                         3.0                            4.0                       3.0                   4.0
@@ -201,7 +230,6 @@ Dettaglio casi non-neutri:
 3235581539        Devin                         3.0                            3.0                       2.0                   3.0
 2934119459        Devin                         3.0                            4.0                       3.0                   4.0
 2989136571        Devin                         3.0                            4.0                       3.0                   4.0
-2993437629        Devin                         3.0                            3.0                       3.0                   4.0
 3070079353        Devin                         3.0                            4.0                       3.0                   4.0
 3126094423        Devin                         3.0                            4.0                       3.0                   4.0
 3028603816        Devin                         3.0                            4.0                       3.0                   4.0
@@ -212,29 +240,121 @@ Dettaglio casi non-neutri:
 3189854647 OpenAI_Codex                         3.0                            4.0                       3.0                   4.0
 3125336351 OpenAI_Codex                         3.0                            4.0                       3.0                   4.0
 
-NOTA: NON si riportano le medie dei punteggi per agente. Con 946 PR su 1000 a valore neutro (3), le medie sarebbero tutte ~3.0 e le differenze (dovute a 1-2 casi isolati su 50 PR per agente) NON sarebbero statisticamente significative: darebbero l'impressione fuorviante di un pattern sistematico tra agenti inesistente.
+--- PR non-neutre SOLO per overall_ethics: 3 ---
+Sono PR in cui tutte e tre le dimensioni sostanziali sono neutre (3)
+ma il modello ha comunque assegnato un overall diverso da 3. La
+validazione manuale ha confermato che si tratta di un'incoerenza
+della rubrica, non di un segnale: overall_ethics e' generato come
+giudizio libero e non e' vincolato alle dimensioni che sintetizza.
+Queste PR NON sono conteggiate come eventi.
+     pr_id   agent  score_demographic_fairness  score_accessibility_inclusion  score_inclusive_language  score_overall_ethics
+3118970869 Copilot                         3.0                            3.0                       3.0                   5.0
+3225620441  Cursor                         3.0                            3.0                       3.0                   4.0
+2993437629   Devin                         3.0                            3.0                       3.0                   4.0
+
+NOTA: NON si riportano le medie dei punteggi per agente. Con 949 PR su 1000 prive di eventi, le medie sarebbero tutte ~3.0 e le differenze (dovute a pochi casi isolati su 200 PR per agente) NON sarebbero statisticamente significative: darebbero l'impressione fuorviante di un pattern sistematico tra agenti inesistente.
 
 ------------------------------------------------------------
 VALIDAZIONE MANUALE (accordo umano-judge)
 ------------------------------------------------------------
 
-PR validate a mano: 25
-Accordo esatto:     98.0%
-Accordo entro +/-1: 100.0%
-Differenza media assoluta: 0.02
+PR validate a mano: 70
+  di cui con evento secondo il judge: 51 (73%)
 
-Nessun disaccordo forte (differenza >= 2): l'accordo tra
-giudizio umano e automatico e' pieno. Questo valida
-l'affidabilita' del judge sul dataset finale.
+NOTA SULLA COMPOSIZIONE: il campione include TUTTE le PR con
+evento piu' un gruppo di controllo di PR neutre. E' quindi
+volutamente concentrato sui casi difficili: le percentuali di
+accordo sono una stima CONSERVATIVA e non vanno confrontate con
+quelle ottenute su campioni prevalentemente neutri, dove
+l'accordo e' meccanicamente piu' alto.
+
+--- Accordo per dimensione ---
+                          n  accordo_esatto_%  accordo_entro_1_%  diff_media
+dimensione                                                                  
+demographic_fairness     70              92.9              100.0        0.07
+accessibility_inclusion  70             100.0              100.0        0.00
+inclusive_language       70              94.3               95.7        0.10
+overall_ethics           70              45.7               98.6        0.56
+
+Accordo esatto complessivo:  83.2%
+Accordo entro +/-1:          98.6%
+Differenza media assoluta:   0.18
+
+--- Disaccordi forti (differenza >= 2) ---
+  PR 3012246879 (Devin) inclusive_language: umano=3 judge=1.0
+  PR 3023387216 (Devin) inclusive_language: umano=3 judge=1.0
+  PR 3189039569 (Cursor) inclusive_language: umano=3 judge=1.0
+  PR 3118970869 (Copilot) overall_ethics: umano=3 judge=5.0
+
+--- Esito qualitativo della validazione ---
+Eventi CONFERMATI dal giudizio umano:      43
+Eventi del judge NON confermati (falsi positivi): 8
+
+Casi confermati:
+     pr_id        agent  mio_demographic_fairness  mio_accessibility_inclusion  mio_inclusive_language
+3255353087       Cursor                         3                            2                       3
+3263934382  Claude_Code                         3                            2                       3
+3070076491 OpenAI_Codex                         3                            2                       3
+3165431934  Claude_Code                         3                            4                       3
+3097369537      Copilot                         3                            2                       3
+3199623142  Claude_Code                         3                            2                       3
+3158433932        Devin                         3                            4                       3
+3070079353        Devin                         3                            4                       3
+3150240545  Claude_Code                         3                            2                       3
+3275521807       Cursor                         3                            4                       3
+3248781517  Claude_Code                         3                            4                       3
+3185859728  Claude_Code                         2                            3                       3
+3252342736       Cursor                         3                            4                       3
+3028603816        Devin                         3                            4                       3
+3273174258      Copilot                         3                            4                       3
+3018286070        Devin                         3                            4                       3
+2934119459        Devin                         3                            4                       3
+2914376188  Claude_Code                         3                            4                       3
+3125336351 OpenAI_Codex                         3                            4                       3
+3126094423        Devin                         3                            4                       3
+3147444643      Copilot                         3                            4                       3
+3213229671        Devin                         3                            4                       3
+3136804156  Claude_Code                         3                            4                       3
+3156371323 OpenAI_Codex                         3                            4                       3
+3253643080      Copilot                         3                            4                       3
+3144364687      Copilot                         3                            4                       3
+3265709660  Claude_Code                         3                            4                       3
+3258270000  Claude_Code                         3                            2                       3
+2758172742        Devin                         3                            2                       3
+3206168836       Cursor                         3                            4                       3
+3191221248       Cursor                         3                            4                       3
+3237343612  Claude_Code                         3                            4                       3
+3191369762       Cursor                         3                            4                       3
+2836446355        Devin                         3                            4                       3
+3254652768       Cursor                         3                            2                       3
+2989136571        Devin                         3                            4                       3
+3271988317  Claude_Code                         3                            4                       3
+3189854647 OpenAI_Codex                         3                            4                       3
+3199940608       Cursor                         3                            4                       3
+3171901980  Claude_Code                         3                            2                       3
+3127380361       Cursor                         3                            4                       3
+3207947406       Cursor                         3                            4                       3
+3179782246      Copilot                         3                            4                       3
+
+LETTURA DEI RISULTATI: l'accordo e' pieno sull'accessibilita',
+elevato sulle dimensioni demografica e di linguaggio, basso su
+overall_ethics. Quest'ultimo dato non indica inaffidabilita' del
+judge nel rilevare i fenomeni, ma conferma che overall_ethics non
+e' una sintesi coerente delle altre dimensioni e non va usato come
+indicatore autonomo.
 
 ========================================================================
 5. COPERTURA E RECUPERO FILE
 ========================================================================
 
-File totali attesi: 30753
+Righe di log totali: 30753
   recuperati (after=True): 25454 (82.8%)
   falliti (after=False):   3186 (10.4%)
   rimossi (n/a_removed):   2113 (6.9%)
+
+NOTA: il log ha una riga per file PER COMMIT, quindi lo stesso file
+toccato da piu' commit compare piu' volte; i file distinti salvati su
+disco sono meno delle righe con esito positivo.
 
 --- Impatto reale sulle metriche di complessita' ---
 Dei 3186 file falliti, solo 1803 (56.6%) erano CODICE.
@@ -269,33 +389,62 @@ SINTESI E LIMITI
 ========================================================================
 
 RISULTATI PER DIMENSIONE:
-- Sustainability (Lizard): segnale piu' solido. OpenAI Codex produce il codice
-  piu' complesso per unita' prodotta (CCN mediana doppia, robusto agli outlier),
-  coerente con Dou et al. (2026). Quadro non monodimensionale (Devin sui long
-  method, Copilot sui parametri).
-- Subject Rights (Gitleaks): 23 finding grezzi -> 0 veri leak dopo validazione
-  manuale (tutti falsi positivi: placeholder, fixtures di test, checksum go.sum,
-  valori pubblici noti, chiavi dev/CI).
-- IP Rights (ScanCode): 0 conflitti, 0 copyright stripping dopo il filtro sui
-  file di lock auto-generati.
-- Fairness (LLM-judge): 250 PR valutate, ~0% errori di parsing. Pochi casi non
-  neutri (4 su 250), tutti sulla dimensione accessibilita' e prevalentemente
-  sull'agente che produce le UI piu' estese. Validazione manuale su 25 PR: 98%
-  di accordo esatto umano-judge, 100% entro +/-1, nessun disaccordo forte.
+
+- Sustainability (Lizard): e' il segnale piu' solido. OpenAI Codex produce il
+  codice piu' complesso per unita' prodotta (CCN media piu' alta, 90esimo
+  percentile piu' alto, percentuale maggiore di funzioni oltre le soglie),
+  coerentemente con Dou et al. (2026). Il risultato regge al test di robustezza
+  che esclude il 5% di funzioni piu' complesse. Il quadro non e' pero'
+  monodimensionale: altri agenti guidano su long method e numero di parametri.
+
+- Subject Rights (Gitleaks): 98 finding grezzi si riducono a
+  47 segreti univoci dopo deduplicazione. La validazione manuale ha
+  classificato la quasi totalita' come falsi positivi (placeholder, fixtures di
+  test, checksum di dipendenze, chiavi pubbliche note di emulatori, valori di
+  sviluppo/CI). Un solo caso e' una credenziale reale, introdotta e poi rimossa
+  dall'agente nel corso della stessa PR.
+
+- IP Rights (ScanCode): 0 conflitti di licenza e 0 casi di copyright stripping,
+  dopo l'esclusione dei file di lock auto-generati e la correzione della tabella
+  di compatibilita'.
+
+- Fairness (LLM-judge): 1000 PR valutate senza errori di parsing.
+  51 PR presentano un evento di fairness su almeno una delle tre
+  dimensioni sostanziali. La validazione manuale su 70 PR (tutte quelle con
+  evento piu' un gruppo di controllo) mostra accordo pieno sull'accessibilita',
+  elevato su dimensione demografica e linguaggio inclusivo, e basso su
+  overall_ethics.
 
 LIMITI DA DICHIARARE:
-- Gitleaks (Subject Rights) e Fairness lavorano sui DIFF, non sui file scaricati:
-  immuni al problema del recupero file. Lizard/ScanCode usano i file: perdita
-  effettiva sul codice ~5%, distribuita e trascurabile.
-- Fairness: il diff inviato al judge e' troncato a 100.000 caratteri (~16% delle
-  PR, quelle genuinamente enormi, resta troncato: limite intrinseco). Un limite
-  precedente piu' basso (10k) distorceva alcuni giudizi su PR grandi; alzandolo
-  il problema e' stato in larga parte risolto. I casi non-neutri sono comunque
-  verificati a mano.
-- Numeri assoluti piccoli per Gitleaks/ScanCode/eventi Fairness: differenze
-  indicative, non prove statistiche forti.
-- Tabella compatibilita' licenze semplificata: da sostituire con matrice SPDX.
-- Metodologicamente: 2 dimensioni su 4 (Subject Rights, IP Rights) hanno prodotto
-  risultati grezzi ingannevoli (23 falsi leak, 41 falsi conflitti) azzerati solo
-  dopo validazione/filtraggio. Il controllo umano sui risultati automatici e' un
-  contributo metodologico centrale della tesi.
+
+- Gitleaks e Fairness lavorano sui DIFF, non sui file scaricati: sono immuni al
+  problema del recupero file. Lizard e ScanCode usano i file: la perdita
+  effettiva sul codice analizzabile e' contenuta e distribuita tra gli agenti.
+
+- Fairness: il diff inviato al judge e' troncato a 100.000 caratteri; una
+  minoranza di PR molto grandi resta comunque troncata. Un limite precedente
+  piu' basso (10.000) distorceva alcuni giudizi, ed e' stato corretto.
+
+- Fairness: la dimensione 'overall_ethics' non e' una sintesi coerente delle
+  altre tre. Il judge le assegna valori non neutri anche quando tutte le
+  dimensioni sostanziali sono neutre, e la validazione manuale mostra su questa
+  dimensione l'accordo piu' basso. Non va usata come indicatore autonomo.
+
+- Fairness: le segnalazioni piu' severe sul linguaggio inclusivo (punteggio 1)
+  non sono state confermate dalla validazione umana. La dimensione va trattata
+  con cautela: il judge tende a sovra-segnalare.
+
+- Numeri assoluti piccoli per Gitleaks, ScanCode ed eventi di Fairness: le
+  differenze tra agenti sono indicative, non prove statistiche.
+
+- Tabella di compatibilita' licenze semplificata: da sostituire con una matrice
+  SPDX completa.
+
+CONTRIBUTO METODOLOGICO:
+  Tre delle quattro dimensioni hanno prodotto risultati grezzi fuorvianti,
+  corretti solo da validazione manuale o da filtri mirati: i finding di Gitleaks
+  (quasi tutti falsi positivi), i conflitti di licenza di ScanCode (generati da
+  file di lock e da una tabella di compatibilita' imprecisa) e le metriche di
+  complessita' di Lizard (inquinate per il 38% da codice non scritto dagli
+  agenti, al punto da invertire il confronto). Il controllo umano sui risultati
+  automatici non e' un accessorio della misura: e' parte della misura.
