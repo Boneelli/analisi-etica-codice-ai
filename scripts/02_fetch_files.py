@@ -27,11 +27,20 @@ Limiti da gestire:
   - File cancellati dalla PR (status 'removed'): non hanno una versione
     "after", solo "before".
 
+RIPRESA INCREMENTALE (skip delle PR gia' scaricate):
+  Lo script puo' essere rilanciato su un subset ampliato (es. da 250 a 1000
+  PR) senza riscaricare cio' che e' gia' presente. Le PR gia' processate in
+  una run precedente vengono riconosciute tramite il fetch_log.csv esistente
+  e saltate: le loro righe di log vengono riportate tal quali nel nuovo log,
+  cosi' il file resta completo per gli script a valle (in particolare
+  05_run_scancode.py, che legge fetch_log.csv). Usare --no-skip per forzare
+  il riscaricamento integrale.
+
 Output:
   data/files/<pr_id>/after/<sanitized_path>
   data/files/<pr_id>/before/<sanitized_path>
   data/licenses/<owner>__<repo>/LICENSE* (una sola volta per repo)
-  results/fetch_log.csv
+  results/subset/fetch_log.csv
 """
 
 import os
@@ -51,6 +60,7 @@ RESULTS_DIR = PROJECT_ROOT / "results"
 SUBSET_DIR = RESULTS_DIR / "subset"
 FILES_DIR = PROJECT_ROOT / "data" / "files"
 LICENSES_DIR = PROJECT_ROOT / "data" / "licenses"
+FETCH_LOG = SUBSET_DIR / "fetch_log.csv"
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 GITHUB_API_HEADERS = {"Authorization": f"Bearer {GITHUB_TOKEN}"} if GITHUB_TOKEN else {}
@@ -123,6 +133,24 @@ def safe_path(path: str) -> str:
         flat_stem = flat_stem[:MAX_STEM_LEN]
 
     return f"{flat_stem}__{h}{suffix}"
+
+
+def load_previous_log() -> pd.DataFrame | None:
+    """
+    Carica il fetch_log.csv di una run precedente, se esiste.
+    E' la fonte di verita' per capire quali PR sono gia' state processate:
+    il log contiene una riga per ogni file di ogni PR gia' gestita, comprese
+    quelle in cui nulla era scaricabile (404) o senza commit. Usare il log
+    invece del semplice "la cartella esiste" evita di riprocessare PR che
+    erano state gestite correttamente ma non avevano nulla da salvare.
+    """
+    if not FETCH_LOG.exists():
+        return None
+    try:
+        df = pd.read_csv(FETCH_LOG)
+        return df if not df.empty else None
+    except (pd.errors.EmptyDataError, KeyError):
+        return None
 
 
 def fetch_raw_file(owner: str, repo: str, sha: str, path: str, retries: int = 3) -> bytes | None:
@@ -237,14 +265,43 @@ def github_api_url_to_owner_repo(api_url: str) -> tuple[str, str]:
     return owner_repo_from_api_url(api_url)
 
 
-def main(fetch_before: bool = True):
+def main(fetch_before: bool = True, skip_existing: bool = True):
     subset_pr = pd.read_parquet(SUBSET_DIR / "subset_pull_requests.parquet")
     subset_commits = pd.read_parquet(SUBSET_DIR / "subset_commit_details.parquet")
 
-    all_log_rows = []
+    # --- RIPRESA INCREMENTALE ---
+    # Le PR gia' presenti nel log di una run precedente non vengono
+    # riscaricate: le loro righe di log vengono riportate nel nuovo file,
+    # cosi' fetch_log.csv resta completo anche per le PR saltate.
+    prev_log = load_previous_log() if skip_existing else None
+    if prev_log is not None:
+        already_done = set(prev_log["pr_id"].unique())
+        carried_rows = prev_log.to_dict("records")
+        log.info(
+            f"Trovate {len(already_done)} PR gia' scaricate in una run "
+            f"precedente: verranno saltate (le loro righe di log sono "
+            f"riportate nel nuovo fetch_log.csv)."
+        )
+    else:
+        already_done = set()
+        carried_rows = []
+        if skip_existing:
+            log.info("Nessun fetch_log.csv precedente: scarico tutte le PR del subset.")
+
+    n_totali = len(subset_pr)
+    n_da_fare = sum(1 for _, pr in subset_pr.iterrows() if pr["id"] not in already_done)
+    log.info(f"PR nel subset: {n_totali} | da scaricare in questa run: {n_da_fare}")
+
+    all_log_rows = list(carried_rows)
+    n_saltate = 0
 
     for _, pr in subset_pr.iterrows():
         pr_id = pr["id"]
+
+        if pr_id in already_done:
+            n_saltate += 1
+            continue
+
         owner, repo = github_api_url_to_owner_repo(pr["repo_url"])
 
         pr_commits = subset_commits[subset_commits["pr_id"] == pr_id]
@@ -264,12 +321,20 @@ def main(fetch_before: bool = True):
 
     log_df = pd.DataFrame(all_log_rows)
     SUBSET_DIR.mkdir(parents=True, exist_ok=True)
-    log_df.to_csv(SUBSET_DIR / "fetch_log.csv", index=False)
+    log_df.to_csv(FETCH_LOG, index=False)
+
+    log.info(f"PR saltate (gia' scaricate): {n_saltate} | PR processate ora: {n_totali - n_saltate}")
 
     if not log_df.empty and "after_fetched" in log_df.columns:
-        success_rate = (log_df["after_fetched"] == True).mean()
-        log.info(f"File 'after' recuperati con successo: {success_rate:.1%}")
+        # Il confronto e' su stringa perche', rileggendo il log da CSV, i
+        # booleani tornano come testo ("True"/"False") accanto ai valori
+        # speciali tipo "n/a_removed".
+        success_rate = (log_df["after_fetched"].astype(str) == "True").mean()
+        log.info(f"File 'after' recuperati con successo: {success_rate:.1%} (su {len(log_df)} righe totali)")
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    # --no-skip forza il riscaricamento integrale, ignorando il log precedente.
+    skip = "--no-skip" not in sys.argv
+    main(skip_existing=skip)
